@@ -209,7 +209,7 @@ Route::delete('booking/{id}', function ($id) {
 
 
 Route::get('/admin', function () {
-    if(Auth::check())
+    if(Auth::check() && (Auth::user()->roles === 'admin'))
         return redirect('dashboard');
     return view('admin.login');
 });
