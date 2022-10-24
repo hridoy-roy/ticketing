@@ -183,10 +183,7 @@
             <li class="drop-down"><a href="">Language</a>
                 <ul>
                     <li><a href="#">English</a></li>
-                    <li><a href="#">አማርኛ</a></li>
-                    <li><a href="#">Afaan Oromoo</a></li>
-                    <li><a href="#">ትግርኛ</a></li>
-                    <li><a href="#">Somali</a></li>
+                    <li><a href="#">Bangla</a></li>
                 </ul>
             </li>
             <li class="drop-down"><a href="">Manage Trip</a>

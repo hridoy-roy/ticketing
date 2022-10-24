@@ -41,18 +41,6 @@
                                             <input type="text" name="travel_date"class="form-control" id="datepicker1" placeholder="Departure Date" required="" autocomplete="false">
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-2">
-                                        <label class="sr-only" for="inlineFormInputGroupUsername">Return Date</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="ti-calendar"></i></div>
-                                            </div>
-                                            <input type="text" name="return_date"class="form-control" id="datepicker2" placeholder="Return Date" autocomplete="false">
-                                        </div>
-                                        <div class="row text-center">
-                                            <p style="color: white;">(Optional)</p>
-                                        </div>
-                                    </div>
                                     <div class="form-group col-md-2" >
                                         <div class="text-center"><input class="btnsubmit" type="submit" value="Search Buses"  name="submit" /> </div>
                                     </div>

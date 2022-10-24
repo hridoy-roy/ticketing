@@ -1,8 +1,6 @@
 /**
-* Template Name: Arsha - v2.3.0
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name: Bus Project
+* Author: Ikram Hossen
 */
 
 /*--------------------------------------------------------------
@@ -141,8 +139,7 @@ h6 {
 }
 
 #header .logo img {
-    /*max-height: 40px;*/
-    width: 20%;
+    width: 140px;
 }
 
 /*--------------------------------------------------------------
@@ -168,18 +165,16 @@ h6 {
 .nav-menu a {
     display: block;
     position: relative;
-    color: #6e62a2;
+    color: #009f4e;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 0.5px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu a:hover,
-.nav-menu .active > a,
-.nav-menu li:hover > a {
-    color: #6e62a2;
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #333292;
 }
 
 .nav-menu .drop-down ul {
@@ -265,20 +260,21 @@ h6 {
 /* Get Startet Button */
 .get-started-btn {
     margin-left: 25px;
-    color: #6e62a2;
+    color: #009f4e;
     border-radius: 50px;
     padding: 6px 25px 7px 25px;
     white-space: nowrap;
     transition: 0.3s;
     font-size: 14px;
     display: inline-block;
-    border: 2px solid #6e62a2;
+    border: 2px solid #009f4e;
     font-weight: 600;
 }
 
 .get-started-btn:hover {
     background: #fff;
-    color: #6e62a2;
+    color: #333292;
+    border: 2px solid #333292;
 }
 
 @media (max-width: 768px) {
@@ -403,8 +399,8 @@ h6 {
 #hero {
     width: 100%;
     height: 60vh;
-    background: #785abe;
-    background-image: linear-gradient(rgb(120 90 190), rgba(255, 255, 255, 0.5)),
+    background: #333292;
+    background-image: linear-gradient(rgb(0 159 78), rgba(255, 255, 255, 0.5)),
         url(../img/bgnew.png);
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -1696,7 +1692,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
     font-size: 14px;
-    background: #6e62a2;
+    background: #333292;
 }
 
 #footer .footer-newsletter {
@@ -1754,7 +1750,7 @@ section {
 
 #footer .footer-top {
     padding: 48px 0 2px 0;
-    background: #6e62a2;
+    background: #333292;
     color: #fff;
 }
 
