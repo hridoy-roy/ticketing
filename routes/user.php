@@ -15,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/user', function () {
 //        dd(Auth::check() && (Auth::user()->roles === 'user'));
-        Route::get('/register',[\App\Http\Controllers\UserController::class],'register')->name('register');
-        Route::get('/profile',[\App\Http\Controllers\UserController::class],'profile')->name('profile');
+       
+    
 
 });
+Route::get('/register',[\App\Http\Controllers\UserController::class,'register'])->name('register');
+Route::get('/profile',[\App\Http\Controllers\UserController::class,'profile'])->name('profile');
+
 
 
