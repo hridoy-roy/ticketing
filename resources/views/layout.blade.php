@@ -224,10 +224,10 @@
 
           <div class="col-lg-3 col-md-3 footer-links">
             <h4>Contact Us</h4>
-            <p>info@fetanbus.com</p>
-            <p>+251 00 00 00 00</p>
-            <p>Grace Plaza, 2nd Floor, Bole</p>
-            <p>City, Addis Ababa, Ethiopia</p>
+            <p>info@nubbus.com</p>
+            <p>01755-514661</p>
+            <p>Ashiyan City Rd, Dhaka 1230</p>
+           
 
           </div>
 
@@ -264,14 +264,10 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        2021 &copy; Copyright <strong><span>fetanbus.com</span></strong>. All Rights Reserved
+        2022 &copy; Copyright <strong><span>nub-bus.com</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Powered by <a href="https://primetechplc.com/" target="_blank">PRIME</a>
+        Powered by <a href="javascript void(0);" target="_blank">Error 404</a>
       </div>
     </div>
   </footer><!-- End Footer -->

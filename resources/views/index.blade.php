@@ -69,33 +69,41 @@
         </div>
 
         <div class="row content d-flex flex-row align-items-center">
-          <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <div class="mb-3 fa-5x">
-
-                <span style="color: #6e62a2;"><i class="fas fa-bus"></i></span>
+          <div class="col-lg-4 d-flex flex-column align-items-center text-center f">
+           
+            <div class="feature-wrap">
+            <div class="mb-3 feature-box">
+            <img src="{{asset('img/indexicons/bus.png')}}" alt="">
             </div>
             <div >
-                <h4>MULTIPLE BUS OPERATORS</h4>
+                <h4 class="title-01">MULTIPLE BUS OPERATORS</h4>
                 <p>Several bus service providers available on our platforms</p>
             </div>
+            </div>
           </div>
-          <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <div class="mb-3">
-                <img src="{{asset('img/indexicons/pcicon.png')}}" alt="">
+          <div class="col-lg-4 d-flex flex-column align-items-center text-center ">
+         
+            <div class="feature-wrap">
+            <div class="mb-3 feature-box">
+                <img src="{{asset('img/indexicons/booking.png')}}" alt="">
             </div>
             <div >
-                <h4>FOUR PLATFORMS</h4>
+                <h4 class="title-01">FOUR PLATFORMS</h4>
                 <p>Tickets are available for booking through website, mobile app, USSD and call center</p>
             </div>
+            </div>
           </div>
           <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <div class="mb-3">
-                <img src="{{asset('img/indexicons/chaticon.png')}}" alt="">
+           
+          <div class="feature-wrap">
+          <div class="mb-3 feature-box">
+                <img src="{{asset('img/indexicons/comments.png')}}" alt="">
             </div>
             <div >
-                <h4>SUPERIOR CUSTOMER SERVICE</h4>
+                <h4 class="title-01">SUPERIOR CUSTOMER SERVICE</h4>
                 <p>Superior and professional customer service from booking to boarding the bus</p>
             </div>
+          </div>
           </div>
         </div>
 
@@ -112,32 +120,41 @@
 
         </div>
 
-        <div class="row content d-flex flex-row align-items-center">
+        <div class="row content d-flex flex-row align-items-center ">
           <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <div class="mb-3">
-                <img src="{{asset('img/indexicons/locicon.png')}}" alt="">
+          
+            <div class="feature-wrap">
+            <div class="mb-3 feature-box">
+                <img src="{{asset('img/indexicons/map.png')}}" alt="">
             </div>
             <div >
-                <h4>BUS LOCATION TRACKING</h4>
+                <h4 class="title-01">BUS LOCATION TRACKING</h4>
                 <p>Track your bus for convenient pickup and drop-off locations</p>
             </div>
+            </div>
           </div>
-          <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <div class="mb-3">
-                <img src="{{asset('img/indexicons/staricon.png')}}" alt="">
+          <div class="col-lg-4 d-flex flex-column align-items-center text-center ">
+           
+            <div class="feature-wrap">
+            <div class="mb-3 feature-box">
+                <img src="{{asset('img/indexicons/rating.png')}}" alt="">
             </div>
             <div >
-                <h4>SERVICE REVIEW</h4>
+                <h4 class="title-01">SERVICE REVIEW</h4>
                 <p>View previous travelers service experiences and ratings</p>
             </div>
+            </div>
           </div>
           <div class="col-lg-4 d-flex flex-column align-items-center text-center">
-            <div class="mb-3">
-                <img src="{{asset('img/indexicons/moneyicon.png')}}" alt="">
+          
+            <div class="feature-wrap">
+            <div class="mb-3 feature-box">
+                <img src="{{asset('img/indexicons/secure-payment.png')}}" alt="">
             </div>
             <div >
-                <h4>FLEXIBLE PAYMENT OPTIONS</h4>
+                <h4 class="title-01">FLEXIBLE PAYMENT OPTIONS</h4>
                 <p>Choose your preferred payment system from multiple payment options</p>
+            </div>
             </div>
           </div>
         </div>
