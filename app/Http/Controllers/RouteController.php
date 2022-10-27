@@ -95,8 +95,9 @@ class RouteController extends Controller
      * @param  \App\Models\Route  $route
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Route $route)
+    public function destroy($routes_destroy_id)
     {
-        //
+        Route::find($routes_destroy_id)->delete();
+        return redirect('/routes')->with('success','route Destroy');
     }
 }

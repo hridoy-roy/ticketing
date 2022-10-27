@@ -259,6 +259,7 @@ Route::put('editTrip','TripController@update');
 Route::post('addTrip','TripController@store');
 
 Route::get('routes','RouteController@index');
+Route::get('routes/destroy/{id}','RouteController@destroy')->name('route.destroy');
 
 Route::post('addRoute','RouteController@store');
 

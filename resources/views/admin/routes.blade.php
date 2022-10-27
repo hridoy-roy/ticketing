@@ -132,6 +132,15 @@
 
 @section('inner-content')
     <div class="main-content-inner">
+        <div class="row">
+            <div class="col-md-12">
+                    @if (session('success'))
+                        <div class="text-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+            </div>
+        </div>
                 <div class="row">
                     <!-- data table start -->
                     <div class="col-12 mt-5">
@@ -163,7 +172,7 @@
                                                     <td>{{$route->place}}</td>
                                                     <td>{{$route->time}}</td>
                                                     <td>
-                                                        <a class="btn btn-danger btn-sm" data-toggle="modal" data-target="#exampleModalLong{{$route->id}}">
+                                                        <a class="btn btn-danger btn-sm" href="{{route('route.destroy',$route->id)}}">
                                                             <i class="fas fa-trash">
                                                             </i>
                                                             Delete
