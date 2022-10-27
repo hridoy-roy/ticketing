@@ -125,7 +125,7 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-               <p>© Copyright 2022. All right reserved fetanbus.com Developed by <a href="#" target="_blank">Error 404</a></p>
+               <p>© Copyright 2022. All right reserved nub-bus.com Developed by <a href="#" target="_blank">Error 404</a></p>
             </div>
         </footer>
         <!-- footer area end-->
