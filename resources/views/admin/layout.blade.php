@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fetanbus Dashboard</title>
+    <title>NuB-Bus Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="{{asset('img/logo/LogoColor.png')}}">
     <link rel="stylesheet" href="{{asset('panel/assets/css/bootstrap.min.css')}}">
@@ -125,7 +125,7 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-               <p>© Copyright 2021. All right reserved fetanbus.com Developed by <a href="https://www.primetechplc.com" target="_blank">PRIME</a></p>
+               <p>© Copyright 2022. All right reserved fetanbus.com Developed by <a href="#" target="_blank">Error 404</a></p>
             </div>
         </footer>
         <!-- footer area end-->
