@@ -14,7 +14,7 @@
 
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
    <!-- Select2 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
@@ -183,10 +183,7 @@
             <li class="drop-down"><a href="">Language</a>
                 <ul>
                     <li><a href="#">English</a></li>
-                    <li><a href="#">አማርኛ</a></li>
-                    <li><a href="#">Afaan Oromoo</a></li>
-                    <li><a href="#">ትግርኛ</a></li>
-                    <li><a href="#">Somali</a></li>
+                    <li><a href="#">Bangla</a></li>
                 </ul>
             </li>
             <li class="drop-down"><a href="">Manage Trip</a>
@@ -222,15 +219,15 @@
         <div class="row d-flex flex-row align-items-start">
 
           <div class="col-lg-3 col-md-3 footer-contact">
-            <img src="{{asset('img/logo/LogoWhite.png')}}">
+            <img src="{{asset('img/logo/nubbus02.png')}}">
           </div>
 
           <div class="col-lg-3 col-md-3 footer-links">
             <h4>Contact Us</h4>
-            <p>info@fetanbus.com</p>
-            <p>+251 00 00 00 00</p>
-            <p>Grace Plaza, 2nd Floor, Bole</p>
-            <p>City, Addis Ababa, Ethiopia</p>
+            <p>info@nubbus.com</p>
+            <p>01755-514661</p>
+            <p>Ashiyan City Rd, Dhaka 1230</p>
+           
 
           </div>
 
@@ -267,14 +264,10 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        2021 &copy; Copyright <strong><span>fetanbus.com</span></strong>. All Rights Reserved
+        2022 &copy; Copyright <strong><span>nub-bus.com</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Powered by <a href="https://primetechplc.com/" target="_blank">PRIME</a>
+        Powered by <a href="javascript void(0);" target="_blank">Error 404</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -321,78 +314,10 @@
   <script>
   $( function() {
     var avadepartdate = [
-      "Addis Ababa",
-      "Mekelle",
-      "Gondar",
-      "Adama",
-      "Awassa",
-      "Bahir Dar",
-      "Dire Dawa",
-      "Sodo",
-      "Dessie",
-      "Jimma",
-      "Jijiga",
-      "Shashamane",
-      "Hawassa",
-      "Bishoftu",
-      "Arba Minch",
-      "Hosaena",
-      "Harar",
-      "Dilla",
-      "Nekemte",
-      "Debre Birhan",
-      "Asella",
-      "Debre Mark'os",
-      "Kombolcha",
-      "Debre Tabor",
-      "Adigrat",
-      "Weldiya",
-      "Sebeta",
-      "Burayu",
-      "Shire",
-      "Ambo",
-      "Arsi Negele",
-      "Axum",
-      "Gambela",
-      "Bale Robe",
-      "Butajira",
-      "Ziway",
-      "Adwa",
-      "Areka",
-      "Yirgalem",
-      "Woliso",
-      "Welkite",
-      "Gode",
-      "Meki",
-      "Negele Borana",
-      "Alaba Kulito",
-      "Alamata",
-      "Chiro",
-      "Tepi",
-      "Durame",
-      "Goba",
-      "Assosa",
-      "Boditi",
-      "Gimbi",
-      "Wukro",
-      "Alemaya",
-      "Mizan Teferi",
-      "Sawla",
-      "Modjo",
-      "Dembi Dolo",
-      "Aleta Wendo",
-      "Metu",
-      "Mota",
-      "Fiche",
-      "Finote Selam",
-      "Bule Hora Town",
-      "Bonga",
-      "Kobo",
-      "Jinka",
-      "Dangila",
-      "Degehabur",
-      "Wolaita Dimtu",
-      "Agaro"
+      "Dhaka",
+      "Cumilla",
+      "Coxs Bazar",
+      "Chittagong",
     ];
     $( "#deptdate" ).autocomplete({
       source: avadepartdate

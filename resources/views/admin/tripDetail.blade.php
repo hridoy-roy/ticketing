@@ -113,7 +113,7 @@
             <div class="col-sm-6 clearfix">
                 <div class="user-profile pull-right">
                     <img class="avatar user-thumb" src="{{asset('panel/assets/images/author/avatar.png')}}" alt="avatar">
-                    <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Samuel Usmail <i class="fa fa-angle-down"></i></h4>
+                    <h4 class="user-name dropdown-toggle" data-toggle="dropdown">NUB-BUS ADMIN <i class="fa fa-angle-down"></i></h4>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Message</a>
                         <a class="dropdown-item" href="#">Settings</a>

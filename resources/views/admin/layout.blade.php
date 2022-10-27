@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fetanbus Dashboard</title>
+    <title>NuB-Bus Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="{{asset('img/logo/LogoColor.png')}}">
     <link rel="stylesheet" href="{{asset('panel/assets/css/bootstrap.min.css')}}">
@@ -66,7 +66,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo mb-5">
-                    <a href="/dashboard"><img src="{{asset('img/logo/LogoWhite.png')}}"/></a>
+                    <a href="/dashboard"><img src="{{asset('img/logo/nubbus02.png')}}"/></a>
                 </div>
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
@@ -125,7 +125,7 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area">
-               <p>© Copyright 2021. All right reserved fetanbus.com Developed by <a href="https://www.primetechplc.com" target="_blank">PRIME</a></p>
+               <p>© Copyright 2022. All right reserved nub-bus.com Developed by <a href="#" target="_blank">Error 404</a></p>
             </div>
         </footer>
         <!-- footer area end-->
@@ -257,78 +257,10 @@
   <script>
   $( function() {
     var avadepartdate = [
-      "Addis Ababa",
-      "Mekelle",
-      "Gondar",
-      "Adama",
-      "Awassa",
-      "Bahir Dar",
-      "Dire Dawa",
-      "Sodo",
-      "Dessie",
-      "Jimma",
-      "Jijiga",
-      "Shashamane",
-      "Hawassa",
-      "Bishoftu",
-      "Arba Minch",
-      "Hosaena",
-      "Harar",
-      "Dilla",
-      "Nekemte",
-      "Debre Birhan",
-      "Asella",
-      "Debre Mark'os",
-      "Kombolcha",
-      "Debre Tabor",
-      "Adigrat",
-      "Weldiya",
-      "Sebeta",
-      "Burayu",
-      "Shire",
-      "Ambo",
-      "Arsi Negele",
-      "Axum",
-      "Gambela",
-      "Bale Robe",
-      "Butajira",
-      "Ziway",
-      "Adwa",
-      "Areka",
-      "Yirgalem",
-      "Woliso",
-      "Welkite",
-      "Gode",
-      "Meki",
-      "Negele Borana",
-      "Alaba Kulito",
-      "Alamata",
-      "Chiro",
-      "Tepi",
-      "Durame",
-      "Goba",
-      "Assosa",
-      "Boditi",
-      "Gimbi",
-      "Wukro",
-      "Alemaya",
-      "Mizan Teferi",
-      "Sawla",
-      "Modjo",
-      "Dembi Dolo",
-      "Aleta Wendo",
-      "Metu",
-      "Mota",
-      "Fiche",
-      "Finote Selam",
-      "Bule Hora Town",
-      "Bonga",
-      "Kobo",
-      "Jinka",
-      "Dangila",
-      "Degehabur",
-      "Wolaita Dimtu",
-      "Agaro"
+      "Dhaka",
+      "Cumilla",
+      "Coxs Bazar",
+      "Chittagong",
     ];
     $( "#deptfrom" ).autocomplete({
       source: avadepartdate
