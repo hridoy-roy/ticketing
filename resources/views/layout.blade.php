@@ -317,6 +317,7 @@
       "Dhaka",
       "Cumilla",
       "Coxs Bazar",
+      "Chittagong",
     ];
     $( "#deptdate" ).autocomplete({
       source: avadepartdate
