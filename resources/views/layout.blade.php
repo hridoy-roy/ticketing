@@ -219,7 +219,7 @@
         <div class="row d-flex flex-row align-items-start">
 
           <div class="col-lg-3 col-md-3 footer-contact">
-            <img src="{{asset('img/logo/LogoWhite.png')}}">
+            <img src="{{asset('img/logo/nubbus02.png')}}">
           </div>
 
           <div class="col-lg-3 col-md-3 footer-links">

@@ -66,7 +66,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo mb-5">
-                    <a href="/dashboard"><img src="{{asset('img/logo/LogoWhite.png')}}"/></a>
+                    <a href="/dashboard"><img src="{{asset('img/logo/nubbus02.png')}}"/></a>
                 </div>
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
