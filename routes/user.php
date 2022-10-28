@@ -16,7 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('/user')->group(function () {
 //        dd(Auth::check() && (Auth::user()->roles === 'user'));
     Route::get('/register', [\App\Http\Controllers\UserController::class, 'register'])->name('register');
+    Route::Post('/register', [\App\Http\Controllers\UserController::class, 'store'])->name('user.register');
     Route::get('/profile', [\App\Http\Controllers\UserController::class, 'profile'])->name('profile');
+
+
+    Route::get('/dashboard', [\App\Http\Controllers\UserDahsboardController::class, 'index'])->name('user.dashboard');
 });
 
 

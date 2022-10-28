@@ -76,9 +76,9 @@
                         <div class="submit-btn-area">
                             <button id="form_submit" type="submit">Submit <i class="ti-arrow-right"></i></button>
                         </div>
-                        {{-- <div class="form-footer text-center mt-5">
-                            <p class="text-muted">Don't have an account? <a href="register.html">Sign up</a></p>
-                        </div> --}}
+                         <div class="form-footer text-center mt-5">
+                            <p class="text-muted">Don't have an account? <a href="{{route('user.register')}}">Sign up</a></p>
+                        </div>
                     </div>
                 </form>
             </div>

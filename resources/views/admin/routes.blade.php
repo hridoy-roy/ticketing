@@ -224,9 +224,6 @@
                                         Please select point.
                                     </div>
                                 </div>
-
-
-
                                 <div class="col-md-12 mb-3">
                                     <label for="validationCustom01">Routing time/place</label>
 

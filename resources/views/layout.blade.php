@@ -198,7 +198,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="/" class="get-started-btn">Sign in</a>
+      <a href="{{route('operator.login')}}" class="get-started-btn">Sign in</a>
 
     </div>
   </header><!-- End Header -->
@@ -227,7 +227,7 @@
             <p>info@nubbus.com</p>
             <p>01755-514661</p>
             <p>Ashiyan City Rd, Dhaka 1230</p>
-           
+
 
           </div>
 
