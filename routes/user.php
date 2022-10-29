@@ -12,16 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/register', [\App\Http\Controllers\UserController::class, 'register'])->name('register');
+Route::Post('/register', [\App\Http\Controllers\UserController::class, 'store'])->name('user.register');
 
-Route::prefix('/user')->group(function () {
-//        dd(Auth::check() && (Auth::user()->roles === 'user'));
-    Route::get('/register', [\App\Http\Controllers\UserController::class, 'register'])->name('register');
-    Route::Post('/register', [\App\Http\Controllers\UserController::class, 'store'])->name('user.register');
-    Route::get('/profile', [\App\Http\Controllers\UserController::class, 'profile'])->name('profile');
+Route::view('login', 'admin.login')->name('login');
 
-
-    Route::get('/dashboard', [\App\Http\Controllers\UserDahsboardController::class, 'index'])->name('user.dashboard');
+Route::middleware(['auth','isUser'])->prefix('/user')->group(function () {
+        Route::get('/dashboard', [\App\Http\Controllers\UserDahsboardController::class, 'index'])->name('user.dashboard');
 });
-
-Route::get('/profile', [\App\Http\Controllers\UserController::class, 'profile'])->name('profile');
 

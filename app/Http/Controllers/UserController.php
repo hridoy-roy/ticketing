@@ -26,6 +26,7 @@ class UserController extends Controller
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'phone' => $request->phone,
             'password' => Hash::make($request->password),
         ]);
 
@@ -36,9 +37,6 @@ class UserController extends Controller
 //        return response()->noContent();
     }
 
-    public function profile()
-    {
-        return view('user.profile');
-    }
+
 
 }

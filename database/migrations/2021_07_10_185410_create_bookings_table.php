@@ -15,6 +15,7 @@ class CreateBookingsTable extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(\App\Models\User::class)->constrained('users')->cascadeOnDelete();
             $table->string('passenger_name');
             $table->string('age');
             $table->string('gender');

@@ -43,6 +43,7 @@ Route::post('/checkout', function(Request $request){
                 $price+=$x;
             }
             $ticket=\App\Models\Booking::create([
+                'user_id' => \Illuminate\Support\Facades\Auth::id(),
                 'passenger_name' => $request->name[$i],
                 'age' => $request->age[$i],
                 'gender' => $request->gender[$i],
@@ -137,7 +138,7 @@ Route::get('paymentConfirmation', function () {
     return view('paymentConfirmation',compact('email','bank'));
 });
 Route::get('/book/{id}', function($id){
-    //dd($id);
+//    dd($id);
     $trips=\App\Models\Trip::find($id);
     $booked=$trips->Bookings;
     $confirmed=$trips->Tickets;
@@ -165,7 +166,7 @@ Route::get('/book/{id}', function($id){
 
     //return json_encode($seat_values);
     return view('checkout',compact('trips','seat_values'));
-})->name('book');
+})->name('book')->middleware('auth');
 
 Route::get('/terms', function(){
     return view('termsAndCondition');
