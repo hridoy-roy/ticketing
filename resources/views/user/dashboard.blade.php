@@ -113,7 +113,7 @@ User dashboard
                 <div class="col-md-3 col-sm-3 col-12">
                     <ul class="nav nav-tabs profile-left-tab">
                         <li class="top-li my-2">
-                            <h4 class="name">Hammad Rahman</h4>
+                            <h4 class="name">{{auth()->user()->name}}</h4>
                             <p class="user-phn">+880 1813871392</p>
                         </li>
                         <li>

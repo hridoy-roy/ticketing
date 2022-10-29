@@ -15,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/register', [\App\Http\Controllers\UserController::class, 'register'])->name('register');
 Route::Post('/register', [\App\Http\Controllers\UserController::class, 'store'])->name('user.register');
 
-Route::view('login', 'admin.login')->name('login');
 
-Route::middleware(['auth','isUser'])->prefix('/user')->group(function () {
+Route::middleware(['isUser','auth'])->prefix('/user')->group(function () {
         Route::get('/dashboard', [\App\Http\Controllers\UserDahsboardController::class, 'index'])->name('user.dashboard');
 });
 
