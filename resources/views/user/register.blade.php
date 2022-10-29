@@ -23,15 +23,15 @@
 
                                     <div class="login-form-body">
                                         <div class="form-gp">
-                                            <input id="name" type="text" name="name" class="@error('name') is-invalid @enderror" placeholder="Name">
+                                            <input id="name" type="text" name="name" class="@error('name') is-invalid @enderror" placeholder="Name" value="{{ old('name') }}">
                                             <i class="fa fa-user"></i>
                                         </div>
                                         <div class="form-gp">
-                                            <input id="phone" type="text" name="phone" placeholder="Mobile Number (Optional)">
+                                            <input id="phone" type="text" name="phone" placeholder="Mobile Number (Optional)" value="{{ old('phone') }}">
                                             <i class="fa fa-phone"></i>
                                         </div>
                                         <div class="form-gp">
-                                            <input id="email" type="email" name="email" class="@error('email') is-invalid @enderror" placeholder="Email">
+                                            <input id="email" type="email" name="email" class="@error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}">
                                             <i class="fa fa-envelope"></i>
                                         </div>
                                         <div class="form-gp">
