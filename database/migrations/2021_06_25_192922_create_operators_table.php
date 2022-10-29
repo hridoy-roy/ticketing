@@ -21,7 +21,6 @@ class CreateOperatorsTable extends Migration
             $table->string('email')->unique();
             $table->string('address');
             $table->string('tin_no')->unique();
-            $table->string('password');
             $table->boolean('status')->default(TRUE);
             $table->timestamps();
         });

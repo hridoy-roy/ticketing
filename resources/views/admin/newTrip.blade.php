@@ -275,6 +275,17 @@
                                         </div>
 
                                         <div class="col-md-4 mb-3">
+                                            <label for="trip_day_status">Trip for Total Days</label>
+
+                                             <select id="trip_day_status" class="form-control" name="trip_day_status">
+                                                <option>Select Days</option>
+                                                <option value="1">5 days</option >
+                                                <option value="1">10 days</option >
+                                                <option value="1">15 days</option >
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-4 mb-3">
                                             <label for="validationCustomUsername">Fare </label>
                                             <div class="input-group">
 
