@@ -1,7 +1,23 @@
 @extends('layout')
-
+<style>
+    .login-box, .register-box {
+        width: 360px;
+        margin: 0 auto;
+    }
+    .form-gp {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .icons {
+        position: absolute;
+        top: 14px;
+        right: 10px;
+        font-size: 12px;
+        color: #666;
+    }
+</style>
 @section('main')
-    <main id="main">
+    <section class="section__top__padding">
         <div class="l-main-container">
             <div class="login-area login-s2">
                 <div class="container">
@@ -10,8 +26,8 @@
                             <div class="login-box">
                                 <form action="{{route('user.register')}}" method="post">
                                     @csrf
-                                    <div class="login-form-head">
-                                        <h4>Sign Up</h4>
+                                    <div class="login-form-head text-center">
+                                        <h4><strong>Sign Up</strong></h4>
                                         <p>Hello there, Sign up and start managing your Dashboard</p>
                                     </div>
                                     @if ($errors->any())
@@ -23,33 +39,32 @@
 
                                     <div class="login-form-body">
                                         <div class="form-gp">
-                                            <input id="name" type="text" name="name" class="@error('name') is-invalid @enderror" placeholder="Name" value="{{ old('name') }}">
-                                            <i class="fa fa-user"></i>
+                                            <input id="name" type="text" name="name" class="form-control" placeholder="Name" >
+                                            <i class="fa fa-user icons"></i>
                                         </div>
                                         <div class="form-gp">
-                                            <input id="phone" type="text" name="phone" placeholder="Mobile Number (Optional)" value="{{ old('phone') }}">
-                                            <i class="fa fa-phone"></i>
+                                            <input id="phone" class="form-control" type="text" name="phone" placeholder="Mobile Number (Optional)">
+                                            <i class="fa fa-phone icons"></i>
                                         </div>
                                         <div class="form-gp">
-                                            <input id="email" type="email" name="email" class="@error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}">
-                                            <i class="fa fa-envelope"></i>
+                                            <input id="email" type="email" name="email" class="form-control" placeholder="Email">
+                                            <i class="fa fa-envelope icons"></i>
                                         </div>
                                         <div class="form-gp">
-                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password">
-                                            <i class="fa fa-eye eye_icon"></i>
+                                            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                            <i class="fa fa-eye eye_icon icons"></i>
                                         </div>
                                         <div class="form-gp">
-                                            <input id="password" type="password" name="password_confirmation"  class="@error('password_confirmation') is-invalid @enderror" required=""
+                                            <input id="password" type="password" name="password_confirmation"  class="form-control" required=""
                                                    placeholder="Password">
-                                            <i class="fa fa-eye eye_icon"></i>
+                                            <i class="fa fa-eye eye_icon icons"></i>
                                         </div>
 
                                         <div class="submit-btn-area">
-                                            <button id="form_submit" type="submit">Submit<i
+                                            <button id="form_submit" type="submit" class="form-control btn btn-success">Submit <i
                                                     class="fa fa-arrow-right"></i></button>
                                         </div>
                                         <div class="form-footer text-center mt-4">
-{{--                                            <p class="text-muted">Already have an account? <a href="{{route('')}}">Sign In</a></p>--}}
                                         </div>
                                     </div>
                                 </form>
@@ -59,5 +74,5 @@
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 @endsection

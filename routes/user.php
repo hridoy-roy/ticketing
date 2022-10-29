@@ -23,5 +23,5 @@ Route::prefix('/user')->group(function () {
     Route::get('/dashboard', [\App\Http\Controllers\UserDahsboardController::class, 'index'])->name('user.dashboard');
 });
 
-
+Route::get('/profile', [\App\Http\Controllers\UserController::class, 'profile'])->name('profile');
 

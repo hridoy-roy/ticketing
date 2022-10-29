@@ -18,18 +18,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 style="color: red;">Terms and Conditions</h2>
+          <h2>Terms and Conditions</h2>
 
         </div>
 
         <div class="row content">
           <div class="col-lg-12">
-            <p>
-                These terms and conditions (collectively, hereinafter referred to as the "<b>Terms</b>") govern your access to and use of the website,
-                and mobile applications that link to or reference these Terms ("<b>Website</b>"). Further, the Website is operated by <b>DreamTeach
-                Technologies PLC. (Company registration NO.BL/AA/14/673/6685283/2013:) (Hereinafter "https://fetanbus.com")</b>.
-            </p>
-
             <p>
                 The '<b>Seller</b>' referred to in the entire Terms below is the local bus operator who
                 is registered with the Website and whose inventory is listed on the Website.
@@ -65,14 +59,14 @@
             <p>
                 PLEASE NOTE THAT YOUR USE OF THE WEBSITE IN ANY WAY SIGNIFIES YOUR ACCEPTANCE TO OUR TERMS. By agreeing to these
                 In addition to this Term, any other 'terms of service' of the application-programming interface ("<b>API</b>")
-                with which https://fetanbus.com may tie-up would form an integral part of this Agreement (hereinafter referred
+                with which NUB BUS may tie-up would form an integral part of this Agreement (hereinafter referred
                 to as the "<b>API Terms</b>"). However, in the event of a conflict between such API Terms and this Agreement, the terms
                 of this Agreement shall prevail.
             </p>
 
             <p>
                 In addition to these Terms, any other 'terms of service' of the application-programming interface ("<b>API</b>") with
-                which https://fetanbus.com may tie-up would form an integral part of this Agreement (hereinafter referred to as the
+                which NUB BUS may tie-up would form an integral part of this Agreement (hereinafter referred to as the
                 "<b>API Terms</b>"). However, in the event of a conflict between such API Terms and these Terms, these Terms shall prevail.
             </p>
 
@@ -88,15 +82,15 @@
                     person who has agreed to become a buyer and/or availed of Facility being offered on the Website.
                 </li>
                 <li>
-                    https://fetanbus.com allows the User to surf the Website or make purchases without registering on the Website.
+                    NUB BUS allows the User to surf the Website or make purchases without registering on the Website.
                     The term "We", "Us", "Our" shall mean Website and/or its affiliates.
                 </li>
             </ol>
 
             <h3><b>Our Website:</b></h3>
             <p>
-                https://fetanbus.com wishes to clarify that it is only an online marketplace which merely connects the business
-                to customers. In light of the foregoing, Https://fetanbus.com wishes to clarify the following:
+                NUB BUS wishes to clarify that it is only an online marketplace which merely connects the business
+                to customers. In light of the foregoing, NUB BUS wishes to clarify the following:
             </p>
             <ol>
                 <li>
@@ -131,16 +125,16 @@
 
             <!-- start here -->
            <h3><b>User Account:</b></h3>
-               <p>Ethiopianbooking.com may offer the option of opening user accounts on the Website by the End-User. The user account may be linked to the User's email-id or phone number or both. For use of the Website by User, either by registering an account with Ethiopianbooking.com or using the Website as guest (unregistered user), the User agrees to the following:</p>
+               <p>NUB BUS may offer the option of opening user accounts on the Website by the End-User. The user account may be linked to the User's email-id or phone number or both. For use of the Website by User, either by registering an account with NUB BUS or using the Website as guest (unregistered user), the User agrees to the following:</p>
                <ol>
-                   <li> You are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer to prevent unauthorized access to your account when You use this Website by registering an account with Ethiopianbooking.com.</li>
-                   <li>By using the Website, either as a guest user or registered user, You authorize Ethiopianbooking.com and its agents to access third party sites, including that of banks and other payment gateways, designated by the bank or on the bank's behalf for retrieving requested information for processing of a customer generated transaction on the Website. </li>
+                   <li> You are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer to prevent unauthorized access to your account when You use this Website by registering an account with NUB BUS.</li>
+                   <li>By using the Website, either as a guest user or registered user, You authorize NUB BUS and its agents to access third party sites, including that of banks and other payment gateways, designated by the bank or on the bank's behalf for retrieving requested information for processing of a customer generated transaction on the Website. </li>
                    <li>In the event that You use the Website through a registered account, You agree to accept responsibility for all activities that occur under your account or password. </li>
                    <li>In the event that You use the Website through a registered account, You should take all necessary steps to ensure that the password is kept confidential and secure and should inform us immediately if you have any reason to believe that your password has become known to anyone else, or if the password is being, or is likely to be, used in an unauthorized manner. Please ensure that the details you provide us with are correct and complete and inform us immediately of any changes to the information that you provided when registering. </li>
                    <li>We will not be responsible for screening, censoring or otherwise controlling transactions, including whether the transaction is legal and valid as per the laws of the land of the User. </li>
                    <li>You warrant that you will abide by all such additional procedures and guidelines, as modified from time to time, in connection with the use of Website. You shall also be liable to comply with all applicable laws and regulations regarding use of Website with respect to the jurisdiction concerned for each transaction. </li>
                    <li>Website may be used for personal and non-commercial purposes only. Therefore, You are not allowed to re-sell, deep-link, use, copy, monitor (e.g. spider, scrape), display, download or reproduce any content or information, software, products or Facility available on Website for any commercial or competitive activity or purpose. </li>
-                   <li>Ethiopianbooking.com reserves the right to refuse access to Website, terminate accounts, remove or edit content at any time without notice if we have reasonable belief that your account is being used for unauthorized purposes.</li>
+                   <li>NUB BUS reserves the right to refuse access to Website, terminate accounts, remove or edit content at any time without notice if we have reasonable belief that your account is being used for unauthorized purposes.</li>
 
                </ol>
 
@@ -164,7 +158,7 @@
 
                <ol>
                <li>This Website may contain links to websites maintained by third parties ("External Sites"). These External Sites are provided for user's reference and convenience only. We do not operate, control or endorse in any respect such External Sites or their content. User assumes sole responsibility for use of these External Sites and is therefore, advised to examine the terms and conditions of those External Sites carefully.</li>
-               <li>You must not link to this Website without obtaining the prior written approval of Ethiopianbooking.com. Use of any automated screen capture or screen scraping technologies to obtain information from this Website without the prior written approval of Ethiopianbooking.com is an infringement of our intellectual property rights.</li>
+               <li>You must not link to this Website without obtaining the prior written approval of NUB BUS. Use of any automated screen capture or screen scraping technologies to obtain information from this Website without the prior written approval of NUB BUS is an infringement of our intellectual property rights.</li>
               </ol>
 
 
@@ -174,7 +168,7 @@
                <ol>
                <li>You acknowledge that you only have a limited right merely to use the Website and that you have no right to modify any part of the Website or reproduce, copy, distribute, sell, resell or access the Facility for any other commercial purposes.</li>
                <li>You are also under an obligation to use this Website for reasonable and lawful purposes only, and shall not indulge in any activity that is not envisaged in these Terms. You shall use this Website and Facility and any products/services purchased through it, for personal, non-commercial use only and shall not re-sell the same to any other person.</li>
-               <li>You may not use any meta tags or any other hidden text utilizing the Ethiopianbooking.com/Website or its affiliates' names or trademarks without the express written consent of Ethiopianbooking.com / Website and / or its affiliates, as applicable.</li>
+               <li>You may not use any meta tags or any other hidden text utilizing the NUB BUS/Website or its affiliates' names or trademarks without the express written consent of NUB BUS / Website and / or its affiliates, as applicable.</li>
                <li>You must not use the Website for any of the following:
 
                <ol>
@@ -198,7 +192,7 @@
                <h3><b>Disclaimer of Warranties and Liability:</b></h3>
 
                <ol>
-               <li>This Website, the Facility, products/services (including but not limited to software) included or otherwise made available to you through this Website are provided on "as is" and "as available" basis without any representation or warranties, express or implied except otherwise specified in writing by Ethiopianbooking.com or on the Website.</li>
+               <li>This Website, the Facility, products/services (including but not limited to software) included or otherwise made available to you through this Website are provided on "as is" and "as available" basis without any representation or warranties, express or implied except otherwise specified in writing by NUB BUS or on the Website.</li>
                <li>Without prejudice to the forgoing paragraph, Website does not warrant that:
 
                <ol>
@@ -206,7 +200,7 @@
                        Website will be constantly available, or available at all; or
                    </li>
                     <li>The information on this Website is complete, true, accurate or non-misleading.</li>
-                    <li>Ethiopianbooking.com will not be liable to you in any way or in relation to the contents of, or use of, or otherwise in connection with, the Website. The Website does not warrant that this Site; information, content, materials, product (including software), Facility or services included on or otherwise made available to you through the Website; their servers; or electronic communication sent from us are free of viruses or other harmful components, despite our best efforts to prevent these incidents.</li>
+                    <li>NUB BUS will not be liable to you in any way or in relation to the contents of, or use of, or otherwise in connection with, the Website. The Website does not warrant that this Site; information, content, materials, product (including software), Facility or services included on or otherwise made available to you through the Website; their servers; or electronic communication sent from us are free of viruses or other harmful components, despite our best efforts to prevent these incidents.</li>
                     <li>You may be required to enter a valid phone number while placing an order or transacting on the Website. By registering your phone number with us, you consent to be contacted by us for the purposes of the transaction on the Website.</li>
                     <li>We will not use your personal information to initiate any promotional phone calls or sms.</li>
                     <li>For the purpose of booking bus tickets through the Website, we warrant that we shall be responsible for the following activities:
@@ -233,7 +227,7 @@
 
               <h3><b>Payment:</b></h3>
               <ol>
-                  <li>By the use of any of the payment method/s available on the Website by You, Ethiopianbooking.com shall not be responsible for nor assume any liability, whatsoever, in respect of any loss or damage arising directly or indirectly to you due to any of the following:
+                  <li>By the use of any of the payment method/s available on the Website by You, NUB BUS shall not be responsible for nor assume any liability, whatsoever, in respect of any loss or damage arising directly or indirectly to you due to any of the following:
                   <ol>
                       <li>Lack of authorization for any transaction/s; or</li>
                       <li>Exceeding the preset limit mutually agreed by You and your bank or credit card company; or</li>
@@ -245,25 +239,25 @@
                   <li>Please note that:
                       <ol>
                           <li>Transactions, transaction price and all commercial terms such as delivery, dispatch of products and/or services are as per principal to principal bipartite contractual obligations between You and bus operator and payment facility is merely used by You and bus operator to facilitate the completion of the transaction. Use of the payment facility shall not render us liable or responsible, directly or indirectly, for the non-delivery, non-receipt, non-payment, damage, breach of representations and warranties, or fraud as regards the products and/or services listed on the Website.</li>
-                          <li>You have specifically authorized Ethiopianbooking.com or its service providers to collect, process, facilitate and remit payments and/or the transaction price electronically. Your relationship with Ethiopianbooking.com is on a principal to principal basis and by accepting these Terms you agree that Ethiopianbooking.com is an independent contractor for all purposes, and does not have control of or liability for the products or services that are listed on the Website that are paid for by using the payment facility. Ethiopianbooking.com does not guarantee the identity of any User nor does it ensure that You or the bus operator will complete a transaction.</li>
-                          <li>You understand, accept and agree that the payment facility provided through any third party on the Website is neither a banking nor financial service but is merely a platform providing an electronic, automated online electronic payment collection and remittance facility for the transactions on the Website using the existing authorized banking infrastructure and credit card payment gateway networks. Further, by providing the payment facility through the Website, Ethiopianbooking.com is neither acting as trustees nor acting in a fiduciary capacity with respect to the transaction or the transaction price.</li>
+                          <li>You have specifically authorized NUB BUS or its service providers to collect, process, facilitate and remit payments and/or the transaction price electronically. Your relationship with NUB BUS is on a principal to principal basis and by accepting these Terms you agree that NUB BUS is an independent contractor for all purposes, and does not have control of or liability for the products or services that are listed on the Website that are paid for by using the payment facility. NUB BUS does not guarantee the identity of any User nor does it ensure that You or the bus operator will complete a transaction.</li>
+                          <li>You understand, accept and agree that the payment facility provided through any third party on the Website is neither a banking nor financial service but is merely a platform providing an electronic, automated online electronic payment collection and remittance facility for the transactions on the Website using the existing authorized banking infrastructure and credit card payment gateway networks. Further, by providing the payment facility through the Website, NUB BUS is neither acting as trustees nor acting in a fiduciary capacity with respect to the transaction or the transaction price.</li>
                           <li>Upon cancellation of previously booked bus tickets on the Website, the refund amount (less relevant deductions) shall be credited to the User's bank account/credit card provided this mode remains valid within 7-10 working days.</li>
                       </ol>
                   </li>
               </ol>
               <ol>
-                 <h3><b>Ethiopianbooking.com Wallet:</b></h3>
-                 <p>Ethiopianbooking.com may provide, at its sole discretion, the facility to transact through Ethiopianbooking.com registered account to its Users in the following manner:</p>
+                 <h3><b>NUB BUS Wallet:</b></h3>
+                 <p>NUB BUS may provide, at its sole discretion, the facility to transact through NUB BUS registered account to its Users in the following manner:</p>
                   <li>
-                      Ethiopianbooking.com may, at its sole discretion, from time to time, offer promotional incentives to Users with non-transferable promotional points ("Promotional cash"). These points will be reflected in their Ethiopianbooking.com registered account.
+                      NUB BUS may, at its sole discretion, from time to time, offer promotional incentives to Users with non-transferable promotional points ("Promotional cash"). These points will be reflected in their NUB BUS registered account.
                   </li>
-                  <li>User agrees that usage of Promotional cash may be subjected to specific terms and conditions of promotional offer(s), as may be notified by Ethiopianbooking.com from time to time.</li>
-                  <li>Except as otherwise provided, the Promotional cash can only be utilized on the base fare (excluding all applicable taxes and charges) for bus ticket booking(s) made on the Website. The Promotional Cash can only be used to redeem up to certain % value, as determined by Ethiopianbooking.com solely, of the said base fare of the bus ticket booking(s) made on the Website for a single transaction.</li>
-                  <li>In case, User fails to enter requisite details for redeeming the Promotional cash, while making a bus ticket booking, the User shall not be entitled to any benefit of such Promotional Cash. Promotional Cash credited to Ethiopianbooking.com registered account of User are non- cashable and non- transferable.</li>
-                  <li>The Promotional cash once used shall be exhausted and in case of cancellation of the relevant bus ticket booking shall not be credited back to Ethiopianbooking.com registered account of User.</li>
-                  <li>The Promotional cash have limited validity from the date it is credited to the Ethiopianbooking.com registered account of a User, post which such Promotional Cash may lapse and its benefits shall not be available for User.</li>
+                  <li>User agrees that usage of Promotional cash may be subjected to specific terms and conditions of promotional offer(s), as may be notified by NUB BUS from time to time.</li>
+                  <li>Except as otherwise provided, the Promotional cash can only be utilized on the base fare (excluding all applicable taxes and charges) for bus ticket booking(s) made on the Website. The Promotional Cash can only be used to redeem up to certain % value, as determined by NUB BUS solely, of the said base fare of the bus ticket booking(s) made on the Website for a single transaction.</li>
+                  <li>In case, User fails to enter requisite details for redeeming the Promotional cash, while making a bus ticket booking, the User shall not be entitled to any benefit of such Promotional Cash. Promotional Cash credited to NUB BUS registered account of User are non- cashable and non- transferable.</li>
+                  <li>The Promotional cash once used shall be exhausted and in case of cancellation of the relevant bus ticket booking shall not be credited back to NUB BUS registered account of User.</li>
+                  <li>The Promotional cash have limited validity from the date it is credited to the NUB BUS registered account of a User, post which such Promotional Cash may lapse and its benefits shall not be available for User.</li>
               <br>
-            <p>These terms pertaining to usage and applicability of Promotional Cash are subject to change at the discretion of Ethiopianbooking.com without any communication or notification to User.</p>
+            <p>These terms pertaining to usage and applicability of Promotional Cash are subject to change at the discretion of NUB BUS without any communication or notification to User.</p>
 
             </ol>
 
@@ -282,7 +276,7 @@
                     <li>The itinerary or booking or confirmation slip is counterfeit or fraudulently obtained;</li>
                     <li>The itinerary has been altered by anyone other than us or our authorized agent, or has been mutilated (in which case we reserve the right to retain such documentation);</li>
                     <li>You are unable to produce a valid and legible boarding ticket for the intended travel. The boarding ticket constitutes as the prima facie evidence of the contract of carriage between us and the boarding ticket holder;</li>
-                    <li>You are deemed medically unfit to travel and may pose a health threat to other passengers on board at the absolute discretion of Ethiopianbooking.com;</li>
+                    <li>You are deemed medically unfit to travel and may pose a health threat to other passengers on board at the absolute discretion of NUB BUS;</li>
                     <li>You fail to arrive on time to board before the time of departure or fail to board the coach by the time the bus departs.</li>
                     <li>If the bus operator has refused to carry you or choose to remove you from carriage as per the reasons abovementioned, we reserve the right to cancel the unused ticket and you will not be entitled to further carriage or refund of fare. We will not be liable for the consequential or incidental loss, damage, cost, or fee you may incur with the refusal of carriage.</li>
                     <li>Children below age twelve (12) will not be accepted for carriage unless they are accompanied by an adult.</li>
@@ -294,25 +288,25 @@
             </ol>
             <ol>
                 <h3><b>Immigration:</b></h3>
-                <p>Ethiopianbooking.com is not responsible for any delays at immigration checkpoints. It is the passenger's responsibility to bring along valid travel document and to comply with customs requirements</p>
+                <p>NUB BUS is not responsible for any delays at immigration checkpoints. It is the passenger's responsibility to bring along valid travel document and to comply with customs requirements</p>
             </ol>
             <ol>
                 <h3><b>Intellectual Property Rights:</b></h3>
                 <li>Content included on the Website, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Website, its affiliates or its content suppliers and is protected by Singapore and international copyright, authors' rights and database right laws.</li>
-                <li>The compilation of all content on this Website is the exclusive property of Website and its affiliates and is protected by laws of Singapore and international copyright and database right laws. All software used on this Website is the property of Ethiopianbooking.com, its affiliates or its software suppliers and is protected by Singapore and international copyright and author' rights laws.</li>
-                <li>You may not systematically extract/or re-utilize parts of the contents of the Website without our express written consent. In particular, you may not utilize any data mining, robots, or similar data gathering and extraction tools to extract (whether once or many times) for re-utilization of any substantial parts of this Website, without Ethiopianbooking.com's express written consent. You may also not create and/or publish your own database that features substantial (eg: prices and product listings) parts of the Website without Rebus's express written consent.</li>
+                <li>The compilation of all content on this Website is the exclusive property of Website and its affiliates and is protected by laws of Singapore and international copyright and database right laws. All software used on this Website is the property of NUB BUS, its affiliates or its software suppliers and is protected by Singapore and international copyright and author' rights laws.</li>
+                <li>You may not systematically extract/or re-utilize parts of the contents of the Website without our express written consent. In particular, you may not utilize any data mining, robots, or similar data gathering and extraction tools to extract (whether once or many times) for re-utilization of any substantial parts of this Website, without NUB BUS's express written consent. You may also not create and/or publish your own database that features substantial (eg: prices and product listings) parts of the Website without Rebus's express written consent.</li>
                 <li>Our Trademarks at various Jurisdictions and you cannot use the trademark for commercially exploiting your interests without our express permission. We reserve our right to initiate legal proceedings if we discover any infringement of our intellectual property rights.</li>
             </ol>
             <ol>
                 <h3><b>Grievance Officer:</b></h3>
-                <p>In case of any consumer grievance, the End-User may contact Ethiopianbooking.com on the email id provided below: support@ethiopianbooking.com.
+                <p>In case of any consumer grievance, the End-User may contact NUB BUS on the email id provided below: support@NUB BUS.
 </p>
             </ol>
             <ol>
                 <h3><b>Indemnity and Release:</b></h3>
                 <ol>
-                    <li>You shall indemnify and hold harmless Website, Ethiopianbooking.com, its subsidiaries, affiliates and their respective officers, directors, agents and employees, from any claim or demand, or actions including reasonable attorney's fees, made by any third party or penalty imposed due to or arising out of your breach of these Terms or any document incorporated by reference, or your violation of any law, rules, regulations or the rights of a third party.</li>
-                    <li>You hereby expressly release Website/Ethiopianbooking.com or any of its affiliates or officers and representatives from any cost, damage, liability or other consequence of any of the actions/inactions of the vendors and specifically waiver any claims or demands that you may have in this behalf under any statute, contract or otherwise.</li>
+                    <li>You shall indemnify and hold harmless Website, NUB BUS, its subsidiaries, affiliates and their respective officers, directors, agents and employees, from any claim or demand, or actions including reasonable attorney's fees, made by any third party or penalty imposed due to or arising out of your breach of these Terms or any document incorporated by reference, or your violation of any law, rules, regulations or the rights of a third party.</li>
+                    <li>You hereby expressly release Website/NUB BUS or any of its affiliates or officers and representatives from any cost, damage, liability or other consequence of any of the actions/inactions of the vendors and specifically waiver any claims or demands that you may have in this behalf under any statute, contract or otherwise.</li>
                 </ol>
             </ol>
 
@@ -333,18 +327,18 @@
                 <h3><b>Suspension, Termination or Cancellation</b></h3>
 
                     <p>Website may suspend, cancel or terminate your account registered with us, with or without prior notice, if we believe in good faith that you have breached any of these Terms or any other terms or policies referred to in these Terms.</p>
-                    <p>ethiopianbooking.com reserves the right, at its sole discretion, to accept, hold and/or cancel any reservation of bus tickets made by the User on the ethiopianbooking.com website, ethiopianbooking.com mobile website and ethiopianbooking.com mobile apps, which is deemed to be fraudulent or suspicious by ethiopianbooking.com.</p>
-                    <p>ethiopianbooking.com will endeavor to inform the User in the event of cancellation of reservation, owing to fraud or suspicious activity, to the best of its capacity, but shall not be liable for a failure to communicate such cancellation to the User.
+                    <p>NUB BUS reserves the right, at its sole discretion, to accept, hold and/or cancel any reservation of bus tickets made by the User on the NUB BUS website, NUB BUS mobile website and NUB BUS mobile apps, which is deemed to be fraudulent or suspicious by NUB BUS.</p>
+                    <p>NUB BUS will endeavor to inform the User in the event of cancellation of reservation, owing to fraud or suspicious activity, to the best of its capacity, but shall not be liable for a failure to communicate such cancellation to the User.
                     </p>
 
             </ol>
             <ol>
                 <h3><b>Amendment / Modification:</b></h3>
-                <p>Ethiopianbooking.com reserves the right to modify these Terms at any time with or without any further notice(s) by uploading the revised Terms on the Website and it is Your duty to keep yourself aware of the revisions to the Terms of the Website.</p>
+                <p>NUB BUS reserves the right to modify these Terms at any time with or without any further notice(s) by uploading the revised Terms on the Website and it is Your duty to keep yourself aware of the revisions to the Terms of the Website.</p>
             </ol>
             <ol>
                 <h3><b>Limitation Of Liability:</b></h3>
-                <p>THE WEBSITE/ETHIOPIANBOOKING.COM WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND, INCLUDING WITHOUT LIMITATION DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN CONNECTION WITH THE TERMS, WEBSITE, THE FACILITY, TRANSACTION PROCESSING SERVICE, INABILITY TO USE THE FACILITY OR THE TRANSACTION PROCESSING SERVICE, OR THOSE RESULTING FROM ANY SERVICES PURCHASED OR OBTAINED OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO THROUGH THE WEBSITE, BEYOND THE VALUE OF THE LAST TRANSACTION CARRIED OUT BY THE END-USER THROUGH THE SITE.</p>
+                <p>THE WEBSITE/NUB BUS WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND, INCLUDING WITHOUT LIMITATION DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN CONNECTION WITH THE TERMS, WEBSITE, THE FACILITY, TRANSACTION PROCESSING SERVICE, INABILITY TO USE THE FACILITY OR THE TRANSACTION PROCESSING SERVICE, OR THOSE RESULTING FROM ANY SERVICES PURCHASED OR OBTAINED OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO THROUGH THE WEBSITE, BEYOND THE VALUE OF THE LAST TRANSACTION CARRIED OUT BY THE END-USER THROUGH THE SITE.</p>
             </ol>
             <ol>
                <h3><b>Miscellaneous</b></h3>
@@ -352,7 +346,7 @@
                 <li>These Terms constitute the complete and entire agreement between the Parties on the subject of 'terms of usage of the Website' (save and except the other policies and terms referred to in these Terms) and shall supersede any and all other prior understandings, commitments, representations or agreements, whether written or oral, between the Parties to these Terms.</li>
                 <li>If any provision of these Terms shall be found by any court or administrative body of competent jurisdiction to be invalid or unenforceable, such invalidity or enforceability shall not affect the other provisions of these Terms, which shall remain in full force and effect.</li>
                 <li>In no event will any delay, failure or omission (in whole or in part) in enforcing, exercising or pursuing any right, power, privilege, claim or remedy conferred by or arising under these Terms or by law, be deemed to be or construed as a waiver of that or any other right, so as to bar the enforcement of that, or any other right, power privilege, claim or remedy, in any other instance at any time or times subsequently.</li>
-                <li>ethiopianbooking.com coupon codes can be used by the User a maximum of two transactions in a 7 calendar days.</li>
+                <li>NUB BUS coupon codes can be used by the User a maximum of two transactions in a 7 calendar days.</li>
             </ol>
 
           </div>

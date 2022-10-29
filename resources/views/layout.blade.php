@@ -180,17 +180,19 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-            <li class="drop-down"><a href="">Language</a>
+            {{-- <li class="drop-down"><a href="">Language</a>
                 <ul>
                     <li><a href="#">English</a></li>
                     <li><a href="#">Bangla</a></li>
                 </ul>
-            </li>
+            </li> --}}
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
             <li class="drop-down"><a href="">Manage Trip</a>
                 <ul>
                     <li><a href="/cancelTrip">Cancel Booking</a></li>
-                    <li><a href="#">Update Booking</a></li>
-                    <li><a href="#">Track Booking</a></li>
+                    {{-- <li><a href="#">Update Booking</a></li>
+                    <li><a href="#">Track Booking</a></li> --}}
                 </ul>
             </li>
 
@@ -198,7 +200,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="{{route('operator.login')}}" class="get-started-btn">Sign in</a>
+      <a href="{{route('login')}}" class="get-started-btn">Sign in</a>
 
     </div>
   </header><!-- End Header -->
