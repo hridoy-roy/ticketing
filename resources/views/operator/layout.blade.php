@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fetanbus Operator Dashboard</title>
+    <title>NUB Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="{{asset('img/logo/LogoColor.png')}}">
     <link rel="stylesheet" href="{{asset('panel/assets/css/bootstrap.min.css')}}">

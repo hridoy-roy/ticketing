@@ -1,20 +1,5 @@
 @extends('layout')
 
-@section('hero')
-    <!-- ======= Hero Section ======= -->
-  {{-- <section id="hero1" class="d-flex align-items-center terms">
-
-    <div class="container">
-      <div class="row">
-
-
-      </div>
-    </div>
-
-
-  </section><!-- End Hero --> --}}
-@endsection
-
 @section('main')
   <main id="main" style="margin-top: 100px;">
     <section id="about" class="about">

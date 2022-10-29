@@ -117,6 +117,8 @@ h6 {
     top: 0;
     width: 100%;
     height: min-content;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0px 0px 15px #adadad33;
 }
 
 #header.header-scrolled,
@@ -165,7 +167,7 @@ h6 {
 .nav-menu a {
     display: block;
     position: relative;
-    color: #009f4e;
+    color: #444444;
     transition: 0.3s;
     font-size: 16px;
     letter-spacing: 0.5px;
@@ -562,12 +564,12 @@ section {
 
 .section-title h2 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #838486;
+    color: #009f4e;
 }
 
 .section-title h2::before {
@@ -647,13 +649,15 @@ section {
 .about .content ul li + li {
     margin-top: 10px;
 }
-
+.section__top__padding{
+    margin-top: 80px;
+}
 .about .content ul i {
     position: absolute;
     left: 0;
     top: 2px;
     font-size: 20px;
-    color: #6e62a2;
+    color: #009f4e;
     line-height: 1;
 }
 

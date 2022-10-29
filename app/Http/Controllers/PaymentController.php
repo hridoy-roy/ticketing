@@ -15,7 +15,6 @@ class PaymentController extends Controller
             "nonce"=> strval(rand()),
             "outTradeNo"=> "19423000",
             "receiveName"=> "Dream Technololgy PLC",
-            // "returnUrl"=> "https://www.fetanbus.com",
             "shortCode"=> "220064",
             "subject"=> "Bus Ticket",
             "timeoutExpress"=> "30",
@@ -27,7 +26,7 @@ class PaymentController extends Controller
                 &nonce='.$ussdJson['nonce'].'
                 &outTradeNo=19423000
                 &receiveName=Dream Technololgy PLC
-                &returnUrl=https://www.fetanbus.com
+                &returnUrl=https://www.nubbus.com
                 &shortCode=220064
                 &subject=Bus Ticket
                 &timeoutExpress=30
