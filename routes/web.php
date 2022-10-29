@@ -138,7 +138,6 @@ Route::get('paymentConfirmation', function () {
     return view('paymentConfirmation',compact('email','bank'));
 });
 Route::get('/book/{id}', function($id){
-//    dd($id);
     $trips=\App\Models\Trip::find($id);
     $booked=$trips->Bookings;
     $confirmed=$trips->Tickets;
