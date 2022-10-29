@@ -1501,7 +1501,7 @@ section {
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #13a4de;
+    border: 3px solid #019f4e;
     border-top-color: #eee;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
@@ -1517,7 +1517,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-    border-color: #13a4de;
+    border-color: #019f4e;
 }
 
 .contact .php-email-form input {
@@ -2015,8 +2015,8 @@ section.d-flex.align-items-center.bresults {
 }
 
 a.changelink {
-    color: #13a4de;
-    border: 1px solid #13a4de;
+    color: #019f4e;
+    border: 1px solid #019f4e;
     padding: 5px 20px;
     margin-left: 20px;
     border-radius: 5px;
@@ -2055,7 +2055,7 @@ table.busdetails {
 }
 
 table.busdetails tbody tr {
-    border: 1px solid #13a4de;
+    border: 1px solid #019f4e;
     /* padding: 16px 27px !important; */
     /* margin-bottom: 20px; */
     /* margin-top: 23px; */
@@ -2114,14 +2114,14 @@ td.busdata.seats1 {
 
 button.btndetail {
     border: none;
-    background: #f4fdf9;
-    color: #6e62a2;
+    background: #019f4e;
+    color: #fff !important;
     padding: 33px 14px;
     font-size: 17px;
     font-weight: bold;
     border-left: 1px solid;
     text-transform: uppercase;
-}
+  }
 
 table.maintitletable {
     width: 90%;
@@ -2136,24 +2136,25 @@ td.busdata.rating.rate {
 }
 
 i.ti-star {
-    background: #13a4de;
-    padding: 5px;
-    color: #fff;
+  background: #019f4e !important;
+  padding: 5px;
+  color: #fff;
+  border-radius: 50px !important;
+  font-size: 14px !important;
 }
-
 small.busty span {
     color: #ff1515;
     font-weight: 600;
 }
 
 tr.bottomlinks {
-    background: #13a4de;
+    background: #333292;
     color: #fff;
 }
 
 button.btndetail.book a {
-    color: #6e62a2 !important;
-}
+    color: #fff !important;
+  }
 
 a.trmcon {
     color: #28a745;
@@ -2161,8 +2162,8 @@ a.trmcon {
 
 .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #13a4de !important;
-    background-color: #13a4de !important;
+    border-color: #019f4e !important;
+    background-color: #019f4e !important;
 }
 
 table.seatsview tr td {
@@ -2215,4 +2216,16 @@ td.seatava a {
   }
   .dtr-data a {
     color: #fff !important;
+  }
+  div.seatCharts-seat.unavailable {
+    background-color: #bdbdbd !important;
+  }
+  div.seatCharts-seat.available.first-class {
+    background-color: #019f4e !important
+  }
+  div.seatCharts-seat.selected {
+    background-color: #FF2D00 !important;
+  }
+  #beforeThis .modal-content .modal-body p{
+    width: 58% !important;
   }
