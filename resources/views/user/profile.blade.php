@@ -69,19 +69,19 @@
             <p class="user-phn">+880 1813871392</p>
           </li>
           <li>
-            <a class="active" data-bs-toggle="tab" data-bs-target="#profile">
+            <a class="active" data-toggle="tab" data-target="#profile">
               <i class="fa fa-user"></i>&nbsp; Profile </a>
           </li>
           <li>
-            <a data-bs-target="#my_bookings" data-bs-toggle="tab">
+            <a data-target="#my_bookings" data-toggle="tab">
               <i class="fa fa-briefcase"></i>&nbsp; My bookings </a>
           </li>
           <li>
-            <a data-bs-target="#edit_profile" data-bs-toggle="tab">
+            <a data-target="#edit_profile" data-toggle="tab">
               <i class="fa fa-edit"></i>&nbsp; Edit profile </a>
           </li>
           <li>
-            <a data-bs-target="#chg_password" data-bs-toggle="tab">
+            <a data-target="#chg_password" data-toggle="tab">
               <i class="fa fa-key"></i>&nbsp; Change password </a>
           </li>
           <li>
