@@ -39,23 +39,27 @@
 
                                     <div class="login-form-body">
                                         <div class="form-gp">
-                                            <input id="name" type="text" name="name" class="form-control" placeholder="Name" >
+                                            <input id="name" type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Name" >
                                             <i class="fa fa-user icons"></i>
+                                            @error('name')<sapn class="text-danger">{{$message}}</sapn>@enderror
                                         </div>
                                         <div class="form-gp">
-                                            <input id="phone" class="form-control" type="text" name="phone" placeholder="Mobile Number (Optional)">
+                                            <input id="phone" class="form-control @error('phone') is-invalid @enderror" type="text" name="phone" placeholder="Mobile Number (Optional)">
                                             <i class="fa fa-phone icons"></i>
+                                            @error('phone')<sapn class="text-danger">{{$message}}</sapn>@enderror
                                         </div>
                                         <div class="form-gp">
-                                            <input id="email" type="email" name="email" class="form-control" placeholder="Email">
+                                            <input id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email">
                                             <i class="fa fa-envelope icons"></i>
+                                            @error('email')<sapn class="text-danger">{{$message}}</sapn>@enderror
                                         </div>
                                         <div class="form-gp">
-                                            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Password">
                                             <i class="fa fa-eye eye_icon icons"></i>
+                                            @error('password')<sapn class="text-danger">{{$message}}</sapn>@enderror
                                         </div>
                                         <div class="form-gp">
-                                            <input id="password" type="password" name="password_confirmation"  class="form-control" required=""
+                                            <input id="password" type="password" name="password_confirmation"  class="form-control @error('password_confirmation') is-invalid @enderror" required=""
                                                    placeholder="Password">
                                             <i class="fa fa-eye eye_icon icons"></i>
                                         </div>
