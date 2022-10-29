@@ -28,6 +28,7 @@ class CreateTripsTable extends Migration
             $table->integer('available_seats_upto');
             $table->integer('allowable_luggage');
             $table->double('extra_luggage_fee');
+            $table->double('total_trip_days_for')->default(1);
             $table->bigInteger('bus_id')->unsigned();
             $table->foreign('bus_id')->references('id')->on('buses')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();

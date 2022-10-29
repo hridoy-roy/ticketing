@@ -277,11 +277,11 @@
                                         <div class="col-md-4 mb-3">
                                             <label for="trip_day_status">Trip for Total Days</label>
 
-                                             <select id="trip_day_status" class="form-control" name="trip_day_status">
-                                                <option>Select Days</option>
-                                                <option value="1">5 days</option >
-                                                <option value="1">10 days</option >
-                                                <option value="1">15 days</option >
+                                             <select id="trip_day_status" class="form-control" name="trip_days_for">
+                                                <option value="1" selected>Select Days</option>
+                                                <option value="5">5 days</option >
+                                                <option value="10">10 days</option >
+                                                <option value="15">15 days</option >
                                             </select>
                                         </div>
 

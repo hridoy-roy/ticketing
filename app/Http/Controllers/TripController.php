@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Bus;
 use App\Models\Operator;
 use App\Models\Trip;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Exception;
+
 class TripController extends Controller
 {
 
@@ -45,22 +47,27 @@ class TripController extends Controller
      */
     public function store(Request $request)
     {
-        $trip=Trip::create([
-            'trip_no' => $request->trip_no,
-            'travel_date' => $request->departure_date,
-            'arrival_date' => $request->arrival_date,
-            'depart_from' => $request->depart_from,
-            'arrive_at' => $request->arrive_at,
-            'departure_time' => $request->departure_time,
-            'arrival_time' => $request->arrival_time,
-            'price'=> $request->price,
-            'status' => $request->status,
-            'available_seats_from' => $request->seats_from,
-            'available_seats_upto' => $request->seats_upto,
-            'allowable_luggage' => $request->allowable_luggage,
-            'extra_luggage_fee' => $request->extra_luggage_fee,
-            'bus_id' => $request->bus_id,
-        ]);
+        for ($i = 0;$i < ($request->trip_days_for ?? 1); $i++){
+            $trip=Trip::create([
+                'trip_no' => $request->trip_no,
+                'travel_date' => $request->departure_date,
+                'arrival_date' => $request->arrival_date,
+                'depart_from' => $request->depart_from,
+                'arrive_at' => $request->arrive_at,
+                'departure_time' => Carbon::parse($request->departure_date)->addDays($i)->format('d-M-Y'),
+                'arrival_time' => Carbon::parse($request->arrival_time)->addDays($i)->format('d-M-Y'),
+                'price'=> $request->price,
+                'status' => $request->status,
+                'available_seats_from' => $request->seats_from,
+                'available_seats_upto' => $request->seats_upto,
+                'allowable_luggage' => $request->allowable_luggage,
+                'extra_luggage_fee' => $request->extra_luggage_fee,
+                'total_trip_days_for' => $request->trip_days_for,
+                'bus_id' => $request->bus_id,
+            ]);
+        }
+
+//        $trip=Trip::create($datas);
         if($trip)
             return redirect('/trips')->with('success','Trip info uploaded Successfully');
         else

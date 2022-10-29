@@ -101,7 +101,7 @@ Route::post('/checkout', function(Request $request){
     else{
 
     }
-})->name('checkout');
+})->middleware('auth')->name('checkout');
 
 Route::post('/pay',function(Request $request){
     $orders=\App\Models\Booking::where('order_number','=',$request->order_number)->get();
@@ -136,7 +136,7 @@ Route::get('paymentConfirmation', function () {
     $email=session()->get('email');
     $bank=session()->get('bank');
     return view('paymentConfirmation',compact('email','bank'));
-});
+})->middleware('auth');
 Route::get('/book/{id}', function($id){
     $trips=\App\Models\Trip::find($id);
     $booked=$trips->Bookings;
@@ -165,7 +165,7 @@ Route::get('/book/{id}', function($id){
 
     //return json_encode($seat_values);
     return view('checkout',compact('trips','seat_values'));
-})->name('book')->middleware('auth');
+})->middleware('auth')->name('book');
 
 Route::get('/terms', function(){
     return view('termsAndCondition');
