@@ -249,7 +249,7 @@
                                         <div class="col-md-4 mb-3">
                                             <label for="validationCustom02">Depart Time</label>
 
-                                            <input type="text" name="departure_time"class="form-control" id="timepicker1" placeholder="Departure Time" required="">
+                                            <input type="text" name="departure_time" class="form-control" id="timepicker1" placeholder="Departure Time" required="">
 
 
                                             <div class="valid-feedback">

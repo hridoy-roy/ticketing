@@ -133,7 +133,7 @@
                                                                                         <label for="validationCustom02">Email ID</label>
 
                                                                                         <input type="email" name="email" class="form-control"
-                                                                                            id="timepicker1" placeholder="" required="">
+                                                                                            id="timepicker1" placeholder="" required="" value="{{auth()->user()->email ?? ''}}">
 
                                                                                         <div class="valid-feedback">
                                                                                             Looks good!
@@ -148,7 +148,7 @@
                                                                                         <label for="validationCustom02">Phone #</label>
 
                                                                                         <input type="phone" name="phone" class="form-control"
-                                                                                            id="timepicker2" placeholder="+251-000-000000" required="">
+                                                                                            id="timepicker2" placeholder="+251-000-000000" required="" value="{{auth()->user()->phone ?? ''}}">
 
                                                                                         <div class="valid-feedback">
                                                                                             Looks good!
@@ -1020,7 +1020,7 @@
                         <strong>Passenger `  +`</strong>
                         <label for="validationCustom02">Full Name</label>
                         <input type="text" class="form-control" id="validationCustom02"
-                            placeholder="" value="" required="" name="name[]">
+                            placeholder="" value="{{auth()->user()->name}}" required="" name="name[]">
                         <div class="valid-feedback">
                             Looks good!
                         </div>

@@ -50,12 +50,12 @@ class TripController extends Controller
         for ($i = 0;$i < ($request->trip_days_for ?? 1); $i++){
             $trip=Trip::create([
                 'trip_no' => $request->trip_no,
-                'travel_date' => $request->departure_date,
-                'arrival_date' => $request->arrival_date,
+                'travel_date' => Carbon::parse($request->departure_date)->addDays($i)->format('d-M-Y'),
+                'arrival_date' => Carbon::parse($request->arrival_date)->addDays($i)->format('d-M-Y'),
                 'depart_from' => $request->depart_from,
                 'arrive_at' => $request->arrive_at,
-                'departure_time' => Carbon::parse($request->departure_date)->addDays($i)->format('d-M-Y'),
-                'arrival_time' => Carbon::parse($request->arrival_time)->addDays($i)->format('d-M-Y'),
+                'departure_time' => $request->departure_time,
+                'arrival_time' => $request->arrival_time,
                 'price'=> $request->price,
                 'status' => $request->status,
                 'available_seats_from' => $request->seats_from,

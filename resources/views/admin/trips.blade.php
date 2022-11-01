@@ -85,10 +85,6 @@
                                                 <span>3:15 PM</span>
                                             </div>
                                         </a>
-
-
-
-
                                     </div>
                                 </div>
                             </li>
