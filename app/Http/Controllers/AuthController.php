@@ -93,6 +93,10 @@ class AuthController extends Controller
 
         if(Auth::attempt($req)){
             $tickets=Ticket::orderBy('created_at','desc')->get();
+            if(!session()->has('url.intended'))
+            {
+                session(['url.intended' => url()->previous()]);
+            }
             return redirect()->intended('dashboard');
         }
         else{

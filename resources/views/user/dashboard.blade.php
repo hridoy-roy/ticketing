@@ -9,14 +9,17 @@ User dashboard
         min-height: 500px;
         display: flex;
     }
+
     li.top-li {
         padding: 15px;
         text-align: center;
     }
+
     .profile-left-tab li .active {
         background-color: #03a050 !important;
         color: #fff !important;
     }
+
     .profile-left-tab li a {
         padding: 8px 15px;
         display: block;
@@ -33,15 +36,18 @@ User dashboard
         text-decoration: none;
         cursor: pointer;
     }
+
     .profile-right-tab-content {
         border: 1px solid #eee;
         box-shadow: 0 0 30px rgb(127 137 161/20%);
         min-height: 500px;
         padding: 20px;
     }
+
     .tab-content > .active {
         display: block;
     }
+
     .wlc_msg {
         font-size: 20px;
         text-transform: capitalize;
@@ -51,25 +57,31 @@ User dashboard
         padding-bottom: 10px;
         font-weight: 500;
     }
-    .login_section{
+
+    .login_section {
         margin: 90px 0px 0px;
     }
+
     ul.nav.nav-tabs.profile-left-tab {
         display: flex;
         flex-direction: column;
     }
+
     .profile-right-tab-content .form-gp input {
         border: 1px solid #ddd;
         border-radius: 5px;
         padding: 10px;
     }
+
     .form-gp {
         position: relative;
         margin-bottom: 15px;
     }
-    .form-gp label{
-        display:block;
+
+    .form-gp label {
+        display: block;
     }
+
     .form-gp input {
         width: 100%;
         height: 44px;
@@ -80,10 +92,11 @@ User dashboard
         border-radius: 5px;
         font-size: 14px;
     }
+
     .btn.mid_cont_btn {
         color: #fff !important;
-        background: #03a050 ;
-        border-color: #03a050 ;
+        background: #03a050;
+        border-color: #03a050;
         box-shadow: none !important;
         font-size: 18px;
         font-weight: 600;
@@ -95,9 +108,11 @@ User dashboard
         min-height: 44px;
         text-transform: uppercase;
     }
+
     .profile-right-tab-content .form-gp .icon {
         top: 46px !important;
     }
+
     .form-gp .icon {
         position: absolute;
         right: 10px;
@@ -109,12 +124,27 @@ User dashboard
 @section('main')
     <section class="login_section pt-t pt-md-5">
         <div class="container">
-            <div class="row">
+            @if (Session::get('success'))
+                <section>
+                    <div class="container">
+                        <div class="row content d-flex flex-row align-items-center">
+                            <div class="alert alert-success alert-dismiss" style="width: 50%;position: absolute;">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>{{ Session::get('success') }}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            @endif
+                @foreach ($errors->all() as $error)
+                    <p class="text-danger">{{ $error }}</p>
+                @endforeach
+                <div class="row">
                 <div class="col-md-3 col-sm-3 col-12">
                     <ul class="nav nav-tabs profile-left-tab">
                         <li class="top-li my-2">
                             <h4 class="name">{{auth()->user()->name}}</h4>
-                            <p class="user-phn">+880 1813871392</p>
+                            <p class="user-phn">{{auth()->user()->phone}}</p>
                         </li>
                         <li>
                             <a class="active" data-toggle="tab" data-target="#profile">
@@ -133,7 +163,7 @@ User dashboard
                                 <i class="fa fa-key"></i>&nbsp; Change password </a>
                         </li>
                         <li>
-                            <a href="#" class="text-dark">
+                            <a href="/logout" class="text-dark">
                                 <i class="fa fa-sign-out-alt"></i>&nbsp; Sign out </a>
                         </li>
                     </ul>
@@ -141,7 +171,7 @@ User dashboard
                 <div class="col-md-9 col-sm-9 col-12 ps-sm-0">
                     <div class="tab-content profile-right-tab-content">
                         <div class="tab-pane active" id="profile">
-                            <h2 class="wlc_msg">Welcome !! <strong>Hammad Rahman</strong>
+                            <h2 class="wlc_msg">Welcome !! <strong>{{auth()->user()->name}}</strong>
                             </h2>
                             <div class="row mt-3">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -152,19 +182,19 @@ User dashboard
                                                 <td>
                                                     <strong>Name: </strong>
                                                 </td>
-                                                <td>Hammad Rahman</td>
+                                                <td>{{auth()->user()->name}}</td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <strong>Enter Email: </strong>
+                                                    <strong>Enter: </strong>
                                                 </td>
-                                                <td>+880 1813871392</td>
+                                                <td>{{auth()->user()->email}}</td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <strong>Email: </strong>
+                                                    <strong>Phone: </strong>
                                                 </td>
-                                                <td>ikram.codeware@gmail.com</td>
+                                                <td>{{auth()->user()->phone}}</td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -178,32 +208,33 @@ User dashboard
                             <div id="dngrMsg"></div>
                             <div class="row mt-3">
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <input type="hidden" id="cusID" name="cID" value="5592">
-                                    <div>
-                                        <div class="form-gp">
-                                            <label for="cFirstName">First name</label>
-                                            <input id="cFirstName" type="text" value="Hammad" name="cFirstName" autocomplete="off" required="">
-                                            <span class="icon"><i class="fa fa-user"></i></span>
+                                    <form action="{{route('update.profile')}}" method="post">
+                                        @csrf
+                                        <div>
+                                            <div class="form-gp">
+                                                <label for="cFirstName">Name</label>
+                                                <input id="cFirstName" type="text" value="{{auth()->user()->name}}"
+                                                       name="name" required="">
+                                                <span class="icon"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <div class="form-gp">
+                                                <label for="cusPhone">Enter</label>
+                                                <input id="cusPhone" type="email" disabled="disabled"
+                                                       value="{{auth()->user()->email}}" autocomplete="off"
+                                                       required="">
+                                                <span class="icon"> <i class="fa fa-envelope"></i></span>
+                                            </div>
+                                            <div class="form-gp">
+                                                <label for="cusEmail">Phone</label>
+                                                <input id="cusEmail" type="text" value="{{auth()->user()->phone}}"
+                                                       name="phone" autocomplete="off">
+                                                <span class="icon"> <i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <div class="submit-btn-area">
+                                                <button class="btn mid_cont_btn" type="submit">Update profile</button>
+                                            </div>
                                         </div>
-                                        <div class="form-gp">
-                                            <label for="cLastName">Last name</label>
-                                            <input id="cLastName" type="text" value="Rahman" name="cLastName" autocomplete="off" required="">
-                                            <span class="icon"> <i class="fa fa-user"></i></span>
-                                        </div>
-                                        <div class="form-gp">
-                                            <label for="cusPhone">Enter Email</label>
-                                            <input id="cusPhone" type="text" disabled="disabled" value="+880 1813871392" name="phone" autocomplete="off" required="">
-                                            <span class="icon"> <i class="fa fa-phone"></i></span>
-                                        </div>
-                                        <div class="form-gp">
-                                            <label for="cusEmail">Email</label>
-                                            <input id="cusEmail" type="email" value="ikram.codeware@gmail.com" name="email" autocomplete="off">
-                                            <span class="icon"> <i class="fa fa-envelope"></i></span>
-                                        </div>
-                                        <div class="submit-btn-area">
-                                            <button onclick="updateCustomer()" id="edit_form_submit" class="btn mid_cont_btn" type="button">Update profile</button>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -214,27 +245,35 @@ User dashboard
                             <div class="row mt-3">
                                 <div class="col-lg-6 col-md-7 col-sm-12 col-12">
                                     <div>
-                                        <div class="form-gp togglePass1">
-                                            <label for="current_password">Current password</label>
-                                            <input id="current_password" type="password" name="current_password" autocomplete="off" required="">
-                                            <span class="icon">  <i class="fa fa-eye eye_icon" id="currPassShowHide" onclick="showHide('one');"></i></span>
-                                            <span class="errorTextMsg" id="currPassError"></span>
-                                        </div>
-                                        <div class="form-gp togglePass2">
-                                            <label for="new_password">New password</label>
-                                            <input id="new_password" type="password" name="new_password" autocomplete="off" required="">
-                                            <span class="icon">   <i class="fa fa-eye eye_icon" id="newPasswordShowHide" onclick="showHide('two');"></i></span>
-                                            <span class="errorTextMsg" id="newPassError"></span>
-                                        </div>
-                                        <div class="form-gp togglePass3">
-                                            <label for="confirm_password">Confirm Password</label>
-                                            <input id="confirm_password" type="password" name="confirm_password" autocomplete="off" required="">
-                                            <span class="icon">  <i class="fa fa-eye eye_icon" id="confirmPasswordShowHide" onclick="showHide('three');"></i></span>
-                                            <span class="errorTextMsg" id="confPassError"></span>
-                                        </div>
-                                        <div class="submit-btn-area">
-                                            <button onclick="updatePassword()" id="pass_form_submit" class="btn mid_cont_btn" type="button">Update password</button>
-                                        </div>
+                                        <form action="{{ route('change.password') }}" method="post">
+                                            @csrf
+                                            <div class="form-gp togglePass1">
+                                                <label for="current_password">Current password</label>
+                                                <input id="current_password" type="password" name="current_password"
+                                                       autocomplete="off" required="">
+                                                <span class="icon"> <i class="fa fa-eye eye_icon"></i></span>
+                                                <span class="errorTextMsg" id="currPassError"></span>
+                                            </div>
+                                            <div class="form-gp togglePass2">
+                                                <label for="new_password">New password</label>
+                                                <input id="new_password" type="password" name="new_password"
+                                                       autocomplete="off" required="">
+                                                <span class="icon">   <i class="fa fa-eye eye_icon"></i></span>
+                                                <span class="errorTextMsg" id="newPassError"></span>
+                                            </div>
+                                            <div class="form-gp togglePass3">
+                                                <label for="confirm_password">Confirm Password</label>
+                                                <input id="confirm_password" type="password" name="new_confirm_password"
+                                                       autocomplete="off" required="">
+                                                <span class="icon">  <i class="fa fa-eye eye_icon"></i></span>
+                                                <span class="errorTextMsg" id="confPassError"></span>
+                                            </div>
+                                            <div class="submit-btn-area">
+                                                <button id="pass_form_submit"
+                                                        class="btn mid_cont_btn" type="submit">Update password
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -243,9 +282,76 @@ User dashboard
                             <h2 class="wlc_msg">My bookings</h2>
                             <div class="row mt-4">
                                 <div class="col-md-12">
-                                    <div class="trip-msg">
-                                        <strong>You haven't booking yet.</strong>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered table-hover table-condensed">
+                                            <thead class="thead-light">
+                                            <tr>
+                                                <td class="">Order Number</td>
+                                                <td class="">Passenger Name</td>
+                                                <td class="">Phone</td>
+                                                <td class="">Trip</td>
+                                                <td class="">Seat Number</td>
+                                                <td class="">Date</td>
+                                                <td class="">Action</td>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @forelse($orders as $order)
+                                                <tr>
+                                                    <td>{{$order->order_number}}</td>
+                                                    <td>{{$order->passenger_name}}</td>
+                                                    <td>{{$order->phone}}</td>
+                                                    <td>{{$order->Trip->depart_from}} - {{$order->Trip->arrive_at}}</td>
+                                                    <td>{{$order->seat_no}}</td>
+                                                    <td>{{$order->Trip->travel_date}}</td>
+                                                    <td>
+                                                        <a class="btn btn-danger btn-sm" data-toggle="modal"
+                                                           data-target="#exampleModalLong{{$order->id}}">
+                                                            <i class="fas fa-trash"></i>
+                                                            Delete
+                                                        </a>
+                                                        <div class="modal fade" id="exampleModalLong{{$order->id}}">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content bg-danger">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title">Warning!</h5>
+                                                                        <button type="button" class="close"
+                                                                                data-dismiss="modal">
+                                                                            <span>&times;</span></button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Are you sure you want to delete
+                                                                        order {{$order->order_number}}?
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button"
+                                                                                class="btn btn-outline-light"
+                                                                                data-dismiss="modal">Close
+                                                                        </button>
+                                                                        <form method="post"
+                                                                              action="{{route('booking.delete',$order->id)}}"
+                                                                              style="display: inline;">
+                                                                            @method('DELETE')
+                                                                            @csrf
+                                                                            <button type="submit"
+                                                                                    class="btn btn-outline-light">Delete
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            @empty
+                                                <div class="trip-msg">
+                                                    <strong>You haven't booking yet.</strong>
+                                                </div>
+                                            @endforelse
+                                            </tbody>
+                                        </table>
                                     </div>
+
                                 </div>
                             </div>
                         </div>

@@ -16,7 +16,9 @@ Route::get('/register', [\App\Http\Controllers\UserController::class, 'register'
 Route::Post('/register', [\App\Http\Controllers\UserController::class, 'store'])->name('user.register');
 
 
-Route::middleware(['isUser','auth'])->prefix('/user')->group(function () {
-        Route::get('/dashboard', [\App\Http\Controllers\UserDahsboardController::class, 'index'])->name('user.dashboard');
+Route::middleware(['isUser', 'auth'])->prefix('/user')->group(function () {
+    Route::get('/dashboard', [\App\Http\Controllers\UserDahsboardController::class, 'index'])->name('user.dashboard');
+    Route::post('/update', [\App\Http\Controllers\UserDahsboardController::class, 'updateProfile'])->name('update.profile');
+    Route::post('change-password', [\App\Http\Controllers\UserDahsboardController::class, 'store'])->name('change.password');
 });
 
