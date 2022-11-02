@@ -158,7 +158,7 @@
                             </td>
                             <td class="">{{$trip->arrival_date}}<br>{{$trip->arrival_time}}<br><small class="busty">{{$trip->arrive_at}}</small></td>
                             <td class=""><i class="ti-star"></i> 4.5</td>
-                            <td class="">ETB {{$trip->price}}</td>
+                            <td class="">BDT {{$trip->price}}</td>
                             <td class="">{{(($trip->available_seats_upto-$trip->available_seats_from)+1)-(count($trip->Tickets)+count($trip->Bookings))}} available<br> </td>
 
                         </tr>

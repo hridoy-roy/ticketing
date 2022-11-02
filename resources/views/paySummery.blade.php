@@ -138,7 +138,7 @@
 
                                                             <tr>
                                                                 <th scope="col">Fare   {{count($tickets)}} * {{$single_price}}</th>
-                                                                <th scope="col">Birr {{count($tickets)*$single_price}}</th>
+                                                                <th scope="col">Tk. {{count($tickets)*$single_price}}</th>
                                                             </tr>
                                                             <tr>
                                                                 <td>Tax</td>

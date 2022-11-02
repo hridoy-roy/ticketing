@@ -84,20 +84,17 @@ class AuthController extends Controller
     // }
 
 
-
-
-
     public function authenticate(Request $request){
 
         $req = $this->validateLogin($request);
 
         if(Auth::attempt($req)){
             $tickets=Ticket::orderBy('created_at','desc')->get();
-            if(!session()->has('url.intended'))
-            {
-                session(['url.intended' => url()->previous()]);
+            if(auth()->user()->roles == 'admin'){
+                return redirect()->intended('dashboard');
+            }else{
+                return redirect()->route('user.dashboard');
             }
-            return redirect()->intended('dashboard');
         }
         else{
             return Redirect::to('login')->with('alert','Password Incorrect!');
@@ -109,7 +106,6 @@ class AuthController extends Controller
 
     public function checkLogin()
     {
-
         if(Auth::check()){
             $tickets=Ticket::orderBy('created_at','desc')->get();
             return view('admin.dashboard',compact('tickets'));
@@ -124,6 +120,6 @@ class AuthController extends Controller
     public function logout(){
 
         Auth::logout();
-        return Redirect::to('/admin');
+        return Redirect::to('/');
     }
 }
