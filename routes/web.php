@@ -223,19 +223,19 @@ Route::get('login', function () {
 })->name('login');
 
 Route::post('login', 'AuthController@authenticate');
-Route::post('login', 'AuthController@authenticate');
+
 
 Route::get('logout', 'AuthController@logout');
 
 Route::get('dashboard', 'AuthController@checkLogin')->middleware('isAdmin');
 
-Route::get('operators','OperatorController@index')->middleware('isAdmin');;
+Route::get('operators','OperatorController@index')->middleware('isAdmin');
 
-Route::post('operators','OperatorController@store')->middleware('isAdmin');;
+Route::post('operators','OperatorController@store')->middleware('isAdmin');
 
 Route::delete('operators/{id}','OperatorController@destroy')->name('operator.delete');
 
-Route::get('buses','BusController@index')->middleware('isAdmin');;
+Route::get('buses','BusController@index')->middleware('isAdmin');
 
 Route::post('buses','BusController@store');
 
@@ -243,27 +243,27 @@ Route::delete('buses/{id}','BusController@destroy')->name('bus.delete');
 
 Route::post('aminities','BusController@addAminity');
 
-Route::get('tickets','TicketController@index')->middleware('isAdmin');;
+Route::get('tickets','TicketController@index')->middleware('isAdmin');
 
 Route::get('tickets/{id}','TicketController@edit')->name('ticket.approve');
 
-Route::get('trips','TripController@index')->middleware('isAdmin');;
+Route::get('trips','TripController@index')->middleware('isAdmin');
 
-Route::get('trips/{id}','TripController@show')->middleware('isAdmin');;
+Route::get('trips/{id}','TripController@show')->middleware('isAdmin');
 
-Route::get('bookings','BookingController@index')->middleware('isAdmin');;
+Route::get('bookings','BookingController@index')->middleware('isAdmin');
 
 Route::put('booking/{id}', "BookingController@edit")->name('booking.approve');
 
-Route::get('newTrip','TripController@create')->middleware('isAdmin');;
+Route::get('newTrip','TripController@create')->middleware('isAdmin');
 
-Route::get('editTrip/{id}','TripController@edit')->middleware('isAdmin');;
+Route::get('editTrip/{id}','TripController@edit')->middleware('isAdmin');
 
 Route::put('editTrip','TripController@update');
 
 Route::post('addTrip','TripController@store');
 
-Route::get('routes','RouteController@index')->middleware('isAdmin');;
+Route::get('routes','RouteController@index')->middleware('isAdmin');
 Route::get('routes/destroy/{id}','RouteController@destroy')->name('route.destroy');
 
 Route::post('addRoute','RouteController@store');

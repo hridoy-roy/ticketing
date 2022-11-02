@@ -93,10 +93,6 @@ class AuthController extends Controller
 
         if(Auth::attempt($req)){
             $tickets=Ticket::orderBy('created_at','desc')->get();
-            if(!session()->has('url.intended'))
-            {
-                session(['url.intended' => url()->previous()]);
-            }
             return redirect()->intended('dashboard');
         }
         else{
@@ -109,7 +105,6 @@ class AuthController extends Controller
 
     public function checkLogin()
     {
-
         if(Auth::check()){
             $tickets=Ticket::orderBy('created_at','desc')->get();
             return view('admin.dashboard',compact('tickets'));
