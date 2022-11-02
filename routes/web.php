@@ -280,6 +280,7 @@ Route::prefix('operator')->group(function () {
         return view('operator.login');
     });
 
+
     Route::get('login', function () {
         return view('operator.login');
     })->name('operator.login');
