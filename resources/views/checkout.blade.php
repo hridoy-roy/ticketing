@@ -1069,7 +1069,7 @@
                             id="luggage" placeholder="" required="">
 
                         <div class="valid-feedback">
-                            Luggage more than `+<?php echo $trips->allowable_luggage; ?>+ ` costs `+<?php echo $trips->extra_luggage_fee; ?>+ ` ETB each.
+                            Luggage more than `+<?php echo $trips->allowable_luggage; ?>+ ` costs `+<?php echo $trips->extra_luggage_fee; ?>+ ` BDT each.
                         </div>
                         <div class="invalid-feedback">
                             Please enter valid name.

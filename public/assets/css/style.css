@@ -2137,6 +2137,7 @@ td.busdata.rating.rate {
     padding-right: 0;
     font-weight: bold;
     font-size: 16px;
+    visibility: hidden;
 }
 
 i.ti-star {

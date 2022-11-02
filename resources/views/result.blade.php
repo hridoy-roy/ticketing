@@ -134,7 +134,7 @@
                             </td>
                             <td class="busdata dept">{{$trip->arrival_time}}<br><small class="busty">{{$trip->arrive_at}}</small></td>
                             <td class="busdata rating rate"><i class="ti-star"></i> 4.5</td>
-                            <td class="busdata fare">ETB {{$trip->price}}</td>
+                            <td class="busdata fare">BDT {{$trip->price}}</td>
                             <td class="busdata seats1">{{(($trip->available_seats_upto-$trip->available_seats_from)+1)-(count($trip->Tickets)+count($trip->Bookings))}} available<br> </td>
                             <td><button class="btndetail book"><a href="{{route('book',$trip->id)}}">Book</a></button></td>
                         </tr>

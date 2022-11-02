@@ -142,7 +142,7 @@
 
 														<tr>
 															<th scope="col">Fare   {{count($tickets)}} * {{$single_price}}</th>
-															<th scope="col">Birr {{count($tickets)*$single_price}}</th>
+															<th scope="col">Tk. {{count($tickets)*$single_price}}</th>
 														</tr>
 														<tr>
 															<td>Tax</td>
@@ -171,12 +171,12 @@
 
                                                             @if ($baggage>(count($tickets)*$allowable_lug))
                                                                 <td>Exra Baggage {{$baggage-(count($tickets)*$allowable_lug)}} * {{$lug_fee}}</td>
-															    <td>Birr {{($baggage-(count($tickets)*$allowable_lug))*$lug_fee}}</td>
+															    <td>Tk. {{($baggage-(count($tickets)*$allowable_lug))*$lug_fee}}</td>
                                                             @endif
 														</tr>
 														<tr>
 															<th scope="col">Total </th>
-															<th scope="col">Birr {{$total}}</td>
+															<th scope="col">Tk. {{$total}}</td>
 														</tr>
 													</thead>
 												</table>
