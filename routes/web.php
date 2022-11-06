@@ -22,6 +22,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+
 Route::post('/result', function(Request $request){
     $trips=App\Models\Trip::where('depart_from','LIKE','%'.$request->depart_from.'%')
                             ->where('arrive_at','LIKE','%'.$request->arrive_at.'%')

@@ -170,7 +170,7 @@
 										                                            </div>
                                                                                     <div class="modal-footer align-items-between">
                                                                                         <button class="btn" style="background-color: #6e62a2; color:white;" type="submit" name="addticket" value="book"> Book Now</button>
-                                                                                        <button class="btn" style="background-color: #13a4de; color:white;" type="submit" name="addticket" value="pay"> Pay Now</button>
+{{--                                                                                        <button class="btn" style="background-color: #13a4de; color:white;" type="submit" name="addticket" value="pay"> Pay Now</button>--}}
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1057,8 +1057,9 @@
                         <label for="validationCustom02">Seat #</label>
 
                         <input type="text" name="seat_no[]" class="form-control"
-                            id="deptfrom" placeholder="" required="" value="`+seatNum+`" readonly>
+                            id="deptfrom" placeholder="" required="" value="`+seatNum+`" readonly />
                     </div>
+
 
 
 

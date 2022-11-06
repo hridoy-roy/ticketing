@@ -39,17 +39,17 @@
 
                                     <div class="login-form-body">
                                         <div class="form-gp">
-                                            <input id="name" type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Name" >
+                                            <input id="name" type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Name" value="{{old('name')}}">
                                             <i class="fa fa-user icons"></i>
                                             @error('name')<sapn class="text-danger">{{$message}}</sapn>@enderror
                                         </div>
                                         <div class="form-gp">
-                                            <input id="phone" class="form-control @error('phone') is-invalid @enderror" type="text" name="phone" placeholder="Mobile Number (Optional)">
+                                            <input id="phone" class="form-control @error('phone') is-invalid @enderror" type="text" name="phone" value="{{old('phone')}}" placeholder="Mobile Number (Optional)">
                                             <i class="fa fa-phone icons"></i>
                                             @error('phone')<sapn class="text-danger">{{$message}}</sapn>@enderror
                                         </div>
                                         <div class="form-gp">
-                                            <input id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email">
+                                            <input id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{old('email')}}">
                                             <i class="fa fa-envelope icons"></i>
                                             @error('email')<sapn class="text-danger">{{$message}}</sapn>@enderror
                                         </div>

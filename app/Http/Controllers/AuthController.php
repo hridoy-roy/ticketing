@@ -93,7 +93,7 @@ class AuthController extends Controller
             if(auth()->user()->roles == 'admin'){
                 return redirect()->intended('dashboard');
             }else{
-                return redirect()->route('user.dashboard');
+                return redirect()->intended('user.dashboard');
             }
         }
         else{
