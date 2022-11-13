@@ -114,7 +114,7 @@
 															<div class="front-indicator">Front</div>
 
 														</div>
-														<div class="booking-details col-md-6">
+														<div class="booking-details col-md-8">
 															<div class="modal-body">
                                                                 <form method="POST" action="/checkout"  id="passengerForm"
                                                                     enctype="multipart/form-data">

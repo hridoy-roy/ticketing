@@ -24,15 +24,15 @@
           @if (count($trips)>0)
               {{$trips[0]->depart_from}} <i class="ti-arrow-right"></i> {{$trips[0]->arrive_at}} &nbsp; &nbsp; <a ><i class="ti-angle-left"></i></a> {{$trips[0]->travel_date}} <a><i class="ti-angle-right"></i></a>
           @endif
-        <a href="#" onclick="myFunction()" class="changelink">Change</a></strong>
+        <a href="#" onclick="myFunction()" class="changelink">Change <i class="fa fa-angle-down"></i></a></strong>
       <hr>
     </div>
     <div id="changedetail" style="display: none;">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Change Details</h5>
-            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            <h5 class="modal-title">Modify Search </h5>
+           
           </div>
           <div class="modal-body">
             <form action="/result" method="post">
@@ -68,7 +68,7 @@
                       <div class="input-group-text"><i class="ti-calendar"></i></div>
                     </div>
                     <input type="text" name="travel_date" class="form-control" id="datepicker1" placeholder="Departure Date"
-                      required="" autocomplete="false">
+                      required="" autocomplete="off">
                   </div>
                 </div>
 

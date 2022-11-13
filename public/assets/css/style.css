@@ -2234,3 +2234,22 @@ td.seatava a {
   #beforeThis .modal-content .modal-body p{
     width: 58% !important;
   }
+  .route_wrap {
+    display: flex;
+    align-items: center;
+}
+.route_wrap img {
+    width: 40px;
+}
+.route_wrap {
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.about .content h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 0 0 10px;
+    text-transform: capitalize;
+}
