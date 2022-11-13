@@ -13,7 +13,7 @@
                             <form action="/result" method="post">
                                 @csrf
                                 <div class="form-row">
-                                    <div class="form-group col-md-2">
+                                    <div class="form-group col-md-3">
                                         <label class="sr-only" for="inlineFormInputGroupUsername">Depart From</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
@@ -25,7 +25,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group col-md-2">
+                                    <div class="form-group col-md-3">
                                         <label class="sr-only" for="inlineFormInputGroupUsername">Arrive at</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
@@ -36,14 +36,14 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group col-md-2">
+                                    <div class="form-group col-md-3">
                                         <label class="sr-only" for="inlineFormInputGroupUsername">Departure Date</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text"><i class="ti-calendar"></i></div>
                                             </div>
                                             <input type="text" name="travel_date" class="form-control" id="datepicker1"
-                                                   placeholder="Departure Date" required="" autocomplete="false">
+                                                   placeholder="Departure Date" required="" autocomplete="off">
                                         </div>
                                     </div>
                                     <div class="form-group col-md-2">
@@ -61,16 +61,32 @@
             </div>
         </div>
     </section><!-- End Hero -->
-    <h1>
-        @foreach($trips_routes as $trips_route)
-            {{$trips_route->depart_from }} {{ $trips_route->arrive_at}} <br/>
-        @endforeach
-    </h1>
 @endsection
 
 
 @section('main')
     <main id="main">
+
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>OUR AVAILABLE ROUTES</h2>
+                </div>
+
+                <div class="row content d-flex flex-row align-items-center">
+                    @foreach($trips_routes as $trips_route)
+                    <div class="col-lg-4 text-center">
+                        <div class="route_wrap">
+                            <img src="{{asset('img/indexicons/map.png')}}" alt="Location">
+                            <h3 class="title-01"> {{$trips_route->depart_from }} - {{ $trips_route->arrive_at}}</h3>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </section><!-- End About Us Section -->
+
 
         <!-- ======= About Us Section ======= -->
         <section id="about" class="about">
@@ -123,7 +139,6 @@
             </div>
         </section><!-- End About Us Section -->
 
-
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
 
@@ -137,7 +152,7 @@
 
                         <div class="feature-wrap">
                             <div class="mb-3 feature-box">
-                                <img src="{{asset('img/indexicons/map.png')}}" alt="">
+                                <img src="{{asset('img/indexicons/map.png')}}" alt="Location">
                             </div>
                             <div>
                                 <h4 class="title-01">BUS LOCATION TRACKING</h4>
