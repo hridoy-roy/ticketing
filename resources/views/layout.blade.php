@@ -320,8 +320,8 @@
     $(function () {
         var avadepartdate = [
             "Dhaka",
-            "Cumilla",
-            "Coxs Bazar",
+            "Khulna",
+            "Rajshahi",
             "Chittagong",
         ];
         $("#deptdate").autocomplete({

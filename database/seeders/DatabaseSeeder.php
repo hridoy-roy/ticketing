@@ -29,6 +29,13 @@ class DatabaseSeeder extends Seeder
             'roles' => 'admin',
             'password' => Hash::make('12345678'),
         ]);
+        User::create([
+            'name' => "User",
+            'email' => 'user@gmail.com',
+            'phone' => '01888888888',
+            'roles' => 'user',
+            'password' => Hash::make('12345678'),
+        ]);
         SeatMap::create(
             [
                 'seat_no' => 1,
@@ -324,6 +331,81 @@ class DatabaseSeeder extends Seeder
                 'bus_id' => 6,
             ]);
         }
+
+//        for ($i = 1; $i <= 15; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Boarding',
+//                'time' => '10.00 AM',
+//                'place' => 'Shymoli, Dhaka',
+//                'trip_id' => $i,
+//            ]);
+//        }
+//
+//        for ($i = 1; $i <= 15; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Boarding',
+//                'time' => '10.30 AM',
+//                'place' => 'GabToli, Dhaka',
+//                'trip_id' => $i,
+//            ]);
+//        }
+//
+//        for ($i = 15; $i <= 30; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Boarding',
+//                'time' => '11.00 AM',
+//                'place' => 'Shymoli, Dhaka',
+//                'trip_id' => $i,
+//            ]);
+//        }
+//
+//        for ($i = 15; $i <= 30; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Boarding',
+//                'time' => '11.30 AM',
+//                'place' => 'GabToli, Dhaka',
+//                'trip_id' => $i,
+//            ]);
+//        }
+//
+//
+//        for ($i = 1; $i <= 15; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Dropping',
+//                'time' => '05.00 PM',
+//                'place' => 'Inter District Bus Station, Khulna',
+//                'trip_id' => $i,
+//            ]);
+//        }
+//
+//        for ($i = 1; $i <= 15; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Dropping',
+//                'time' => '5.30 PM',
+//                'place' => 'Rupsha Temporary Bus Station, Khulna',
+//                'trip_id' => $i,
+//            ]);
+//        }
+//
+//        for ($i = 15; $i <= 30; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Dropping',
+//                'time' => '5.30 PM',
+//                'place' => 'Inter District Bus Station, Khulna',
+//                'trip_id' => $i,
+//            ]);
+//        }
+//
+//
+//        for ($i = 15; $i <= 30; $i++) {
+//            Route::create([
+//                'boarding_dropping' => 'Dropping',
+//                'time' => '6.00 PM',
+//                'place' => 'Rupsha Temporary Bus Station, Khulna',
+//                'trip_id' => $i,
+//            ]);
+//        }
+
 
     }
 }

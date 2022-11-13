@@ -38,7 +38,7 @@
             <form action="/result" method="post">
                 @csrf
               <div class="form-row">
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-3">
                   <label class="sr-only" for="inlineFormInputGroupUsername">Depart From</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -50,7 +50,7 @@
                   </div>
                 </div>
 
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-3">
                   <label class="sr-only" for="inlineFormInputGroupUsername">Arrive From</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -61,7 +61,7 @@
                   </div>
                 </div>
 
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-3">
                   <label class="sr-only" for="inlineFormInputGroupUsername">Departure Date</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
@@ -72,15 +72,15 @@
                   </div>
                 </div>
 
-                <div class="form-group col-md-2">
-                  <label class="sr-only" for="inlineFormInputGroupUsername">Return Date</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><i class="ti-calendar"></i></div>
-                    </div>
-                    <input type="text" name="return_date" class="form-control" id="datepicker2" placeholder="Return Date" autocomplete="false">
-                  </div>
-                </div>
+{{--                <div class="form-group col-md-2">--}}
+{{--                  <label class="sr-only" for="inlineFormInputGroupUsername">Return Date</label>--}}
+{{--                  <div class="input-group">--}}
+{{--                    <div class="input-group-prepend">--}}
+{{--                      <div class="input-group-text"><i class="ti-calendar"></i></div>--}}
+{{--                    </div>--}}
+{{--                    <input type="text" name="return_date" class="form-control" id="datepicker2" placeholder="Return Date" autocomplete="false">--}}
+{{--                  </div>--}}
+{{--                </div>--}}
 
                 <div class="form-group col-md-1">
                   <div class="text-center"><input class="btnsubmit" type="submit" value="Search Buses"
@@ -138,62 +138,62 @@
                             <td class="busdata seats1">{{(($trip->available_seats_upto-$trip->available_seats_from)+1)-(count($trip->Tickets)+count($trip->Bookings))}} available<br> </td>
                             <td><button class="btndetail book"><a href="{{route('book',$trip->id)}}">Book</a></button></td>
                         </tr>
-                        <tr class="bottomlinks">
-                            <td> <a href="#" onclick="myFunction3()">Boarding & Dropping</a></td>
-                            <td> <a href="#" onclick="myFunction1()">Amenities</a></td>
-                            <td> <a href="#" onclick="myFunction2()">Bus Photo</a></td>
-                            <td> <a href="#">Review</a></td>
-                            <td> <a href="#"></a></td>
-                            <td> <a href="#"></a></td>
-                            <td> <a href="#"></a></td>
-                            <td> <a href="#"></a></td>
-                        </tr>
-                        <tr>
-                            <td colspan="8">
-                                <div id="myDIV" style="display: none">
-                                    <div class="row">
-                                        <div class="col-md-5 mr-5">
-                                            <strong>Boarding</strong><hr>
-                                            <ul>
-                                                @foreach ($trip->Routes as $route)
-                                                    @if ($route->boarding_dropping=='Boarding')
-                                                        <li>{{$route->place}} - {{$route->time}}</li>
-                                                    @endif
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-5">
-                                            <strong>Dropping</strong><hr>
-                                            <ul>
-                                                @foreach ($trip->Routes as $route)
-                                                    @if ($route->boarding_dropping=='Dropping')
-                                                        <li>{{$route->place}} - {{$route->time}}</li>
-                                                    @endif
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="8">
-                                <div id="myDIV1" style="display: none">
-                                    <ul>
-                                        @foreach ($trip->Bus->Aminities as $aminity)
-                                            <li>{{$aminity->aminity}}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="8">
-                                <div id="myDIV2" style="display: none">
-                                    <img src="{{$trip->Bus->image_url}}" width="400" height="300" />
-                                </div>
-                            </td>
-                        </tr>
+{{--                        <tr class="bottomlinks">--}}
+{{--                            <td> <a href="#" onclick="myFunction3()">Boarding & Dropping</a></td>--}}
+{{--                            <td> <a href="#" onclick="myFunction1()">Amenities</a></td>--}}
+{{--                            <td> <a href="#" onclick="myFunction2()">Bus Photo</a></td>--}}
+{{--                            <td> <a href="#">Review</a></td>--}}
+{{--                            <td> <a href="#"></a></td>--}}
+{{--                            <td> <a href="#"></a></td>--}}
+{{--                            <td> <a href="#"></a></td>--}}
+{{--                            <td> <a href="#"></a></td>--}}
+{{--                        </tr>--}}
+{{--                        <tr>--}}
+{{--                            <td colspan="8">--}}
+{{--                                <div id="myDIV" style="display: none">--}}
+{{--                                    <div class="row">--}}
+{{--                                        <div class="col-md-5 mr-5">--}}
+{{--                                            <strong>Boarding</strong><hr>--}}
+{{--                                            <ul>--}}
+{{--                                                @foreach ($trip->Routes as $route)--}}
+{{--                                                    @if ($route->boarding_dropping=='Boarding')--}}
+{{--                                                        <li>{{$route->place}} - {{$route->time}}</li>--}}
+{{--                                                    @endif--}}
+{{--                                                @endforeach--}}
+{{--                                            </ul>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="col-md-5">--}}
+{{--                                            <strong>Dropping</strong><hr>--}}
+{{--                                            <ul>--}}
+{{--                                                @foreach ($trip->Routes as $route)--}}
+{{--                                                    @if ($route->boarding_dropping=='Dropping')--}}
+{{--                                                        <li>{{$route->place}} - {{$route->time}}</li>--}}
+{{--                                                    @endif--}}
+{{--                                                @endforeach--}}
+{{--                                            </ul>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </td>--}}
+{{--                        </tr>--}}
+{{--                        <tr>--}}
+{{--                            <td colspan="8">--}}
+{{--                                <div id="myDIV1" style="display: none">--}}
+{{--                                    <ul>--}}
+{{--                                        @foreach ($trip->Bus->Aminities as $aminity)--}}
+{{--                                            <li>{{$aminity->aminity}}</li>--}}
+{{--                                        @endforeach--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
+{{--                            </td>--}}
+{{--                        </tr>--}}
+{{--                        <tr>--}}
+{{--                            <td colspan="8">--}}
+{{--                                <div id="myDIV2" style="display: none">--}}
+{{--                                    <img src="{{$trip->Bus->image_url}}" width="400" height="300" />--}}
+{{--                                </div>--}}
+{{--                            </td>--}}
+{{--                        </tr>--}}
                 @endforeach
             @else
                 <div class="section-title">
