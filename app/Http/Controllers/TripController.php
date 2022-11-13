@@ -49,7 +49,7 @@ class TripController extends Controller
     {
         for ($i = 0;$i < ($request->trip_days_for ?? 1); $i++){
             $trip=Trip::create([
-                'trip_no' => $request->trip_no,
+                'trip_no' => $request->trip_no+$i,
                 'travel_date' => Carbon::parse($request->departure_date)->addDays($i)->format('d-M-Y'),
                 'arrival_date' => Carbon::parse($request->arrival_date)->addDays($i)->format('d-M-Y'),
                 'depart_from' => $request->depart_from,
