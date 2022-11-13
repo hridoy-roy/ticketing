@@ -83,7 +83,7 @@ class HomeController extends Controller
         $data = [
             'trips_routes' => $unique,
             'orders' => $orders ?? [],
-            'recommended' => $finalData ?? [],
+            'recommendeds' => $finalData ?? [],
         ];
         return view('index')->with($data);
     }

@@ -60,9 +60,9 @@
 
             </div>
         </div>
+
     </section><!-- End Hero -->
 @endsection
-
 
 @section('main')
     <main id="main">
@@ -71,6 +71,9 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
+                    @foreach($recommendeds as $recommended)
+                       <h1> {{$recommended['depart_from']}} to {{$recommended['arrive_at']}}</h1>
+                    @endforeach
                     <h2>OUR AVAILABLE ROUTES</h2>
                 </div>
 
