@@ -54,10 +54,21 @@
 
 
                             </form>
+                    
+                            
                         </div>
                     </div>
                 </div>
 
+            </div>
+            <div class="row">
+            <div class="section-title recom-wrap d-flex align-items-center">
+                <h5>Recommendation ROUTES : </h5>
+                    @foreach($recommendeds as $recommended)
+                       <h6> {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h6>
+                    @endforeach
+                    
+                </div>
             </div>
         </div>
 
@@ -72,7 +83,7 @@
 
                 <div class="section-title">
                     @foreach($recommendeds as $recommended)
-                       <h1> {{$recommended['depart_from']}} to {{$recommended['arrive_at']}}</h1>
+                       <h1> {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h1>
                     @endforeach
                     <h2>OUR AVAILABLE ROUTES</h2>
                 </div>

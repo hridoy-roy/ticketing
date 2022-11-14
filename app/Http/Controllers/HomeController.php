@@ -60,8 +60,8 @@ class HomeController extends Controller
             foreach ($recommendeds as $recommended) {
                 $recommended = explode("_", $recommended);
                 $finalData[] = [
-                    'depart_from' => $recommended[0],
-                    'arrive_at' => $recommended[1],
+                    'depart_from' => $recommended[0] ??null,
+                    'arrive_at' => $recommended[1] ??null,
                 ];
             }
 
