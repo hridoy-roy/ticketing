@@ -54,8 +54,8 @@
 
 
                             </form>
-                    
-                            
+
+
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     @foreach($recommendeds as $recommended)
                        <h6> {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h6>
                     @endforeach
-                    
+
                 </div>
             </div>
         </div>
@@ -82,9 +82,6 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    @foreach($recommendeds as $recommended)
-                       <h1> {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h1>
-                    @endforeach
                     <h2>OUR AVAILABLE ROUTES</h2>
                 </div>
 
