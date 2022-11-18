@@ -126,7 +126,7 @@
                                                                         </div>
                                                                         <div class="modal-content">
                                                                             <div class="modal-body">
-                                                                                <p style="background-color: #f5f50c; width: 28%; padding: 3px 8px;">Your ticket will be sent to these details</p>
+{{--                                                                                <p style="background-color: #f5f50c; width: 28%; padding: 3px 8px;">Your ticket will be sent to these details</p>--}}
                                                                                 <div class="form-row">
 
                                                                                     <div class="col-md-6 mb-3">

@@ -19,9 +19,19 @@
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text"><i class="ti-location-pin"></i></div>
                                             </div>
-                                            <input type="" id="deptdate" name="depart_from"
-                                                   class="form-control js-example-basic-single"
-                                                   placeholder="Depart from" required="">
+                                            @php
+                                                $arr = $trips_routes->toArray();
+                                                $trips = array_unique(array_column($arr, 'depart_from'));
+                                            @endphp
+                                            <select name="depart_from" class="form-control" id="" required="">
+                                                <option value="" selected disabled>Depart from</option>
+{{--                                                <option value="" selected>Select</option>--}}
+
+                                                @foreach($trips as $trips_route)
+
+                                                    <option value="{{$trips_route}}">{{$trips_route}}</option>
+                                                @endforeach
+                                            </select>
                                         </div>
                                     </div>
 
@@ -31,8 +41,21 @@
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text"><i class="ti-location-pin"></i></div>
                                             </div>
-                                            <input type="text" class="form-control" id="arriveat" name="arrive_at"
-                                                   placeholder="Arrive at" required="">
+                                            @php
+                                                $arr1 = $trips_routes->toArray();
+                                                $arrive_at= array_unique(array_column($arr1, 'arrive_at'));
+                                            @endphp
+                                            <select name="arrive_at" class="form-control" id="" required="">
+                                                <option value="" selected disabled>Arrive at</option>
+                                                {{--                                                <option value="" selected>Select</option>--}}
+
+                                                @foreach($arrive_at as $trips_route)
+
+                                                    <option value="{{$trips_route}}">{{$trips_route}}</option>
+                                                @endforeach
+                                            </select>
+{{--                                            <input type="text" class="form-control" id="arriveat" name="arrive_at"--}}
+{{--                                                   placeholder="Arrive at" required="">--}}
                                         </div>
                                     </div>
 
@@ -62,14 +85,17 @@
 
             </div>
             <div class="row">
-            <div class="section-title recom-wrap d-flex align-items-center">
-                <h5>Recommendation ROUTES : </h5>
-                    @foreach($recommendeds as $recommended)
-                       <h6> {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h6>
-                    @endforeach
+                @auth()
+                    <div class="section-title recom-wrap d-flex align-items-center">
+                        <h5>Recommendation ROUTES : </h5>
+                        @foreach($recommendeds as $recommended)
+                            <h6> {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h6>
+                        @endforeach
 
-                </div>
+                    </div>
+            @endauth
             </div>
+
         </div>
 
     </section><!-- End Hero -->
@@ -87,12 +113,12 @@
 
                 <div class="row content d-flex flex-row align-items-center">
                     @foreach($trips_routes as $trips_route)
-                    <div class="col-lg-4 text-center">
-                        <div class="route_wrap">
-                            <img src="{{asset('img/indexicons/map.png')}}" alt="Location">
-                            <h3 class="title-01"> {{$trips_route->depart_from }} - {{ $trips_route->arrive_at}}</h3>
+                        <div class="col-lg-4 text-center">
+                            <div class="route_wrap">
+                                <img src="{{asset('img/indexicons/map.png')}}" alt="Location">
+                                <h3 class="title-01"> {{$trips_route->depart_from }} - {{ $trips_route->arrive_at}}</h3>
+                            </div>
                         </div>
-                    </div>
                     @endforeach
                 </div>
             </div>
