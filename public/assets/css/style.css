@@ -2259,7 +2259,9 @@ td.seatava a {
     border: 2px dotted #b7b7b7;
     padding: 10px 20px;
     border-radius: 10px;
-    background: #ddd;
+    background: #fff;
+    font-family: "Nunito", sans-serif;
+    color: #444444;
   }
 .recom-wrap h5 {
     color: #fff;
