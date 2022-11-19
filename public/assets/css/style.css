@@ -2255,14 +2255,26 @@ td.seatava a {
 }
 .recom-wrap h6 {
     color: #000;
-    margin: 0px 10px;
     border: 2px dotted #b7b7b7;
     padding: 10px 20px;
     border-radius: 10px;
-    background: #fff;
+    background: #fff0;
     font-family: "Nunito", sans-serif;
-    color: #444444;
+    display: inline-block;
+    margin-right: 12px;
+    color: #fff8f8;
+  margin-right: 12px;
   }
-.recom-wrap h5 {
+  .recom-wrap h5 {
     color: #fff;
+    text-align: left;
+  }
+  .loc-img {
+    width: 24px;
+  }
+  .recom-wrap.d-flex {
+    flex-wrap: wrap;
+  }  
+  .recom-wrap h6:hover {
+    background: #333292;
   }

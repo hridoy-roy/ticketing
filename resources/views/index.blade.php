@@ -86,10 +86,11 @@
             </div>
             <div class="row">
                 @auth()
-                    <div class="section-title recom-wrap d-flex align-items-center">
-                        <h5>Recommendation ROUTES : </h5>
+                    <div class="section-title recom-wrap">
+                        <h5>Recommendation Routes : </h5>
                         @foreach($recommendeds as $recommended)
-                            <h6> {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h6>
+                            <h6><span style="color:#ddd;"><i class="ti-location-pin" aria-hidden="true"></i></span>
+ {{$recommended['depart_from'] ??null}} to {{$recommended['arrive_at'] ??null}}</h6>
                         @endforeach
 
                     </div>
