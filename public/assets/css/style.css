@@ -2278,3 +2278,6 @@ td.seatava a {
   .recom-wrap h6:hover {
     background: #333292;
   }
+  .btn-danger{
+    color: #fff !important;
+  }
